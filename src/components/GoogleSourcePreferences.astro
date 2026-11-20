@@ -1,0 +1,74 @@
+---
+// Komponen untuk Google Source Preferences
+// Memungkinkan pengunjung menambahkan EO Batam Production sebagai preferred source di Google
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<div class={`google-source-preferences-container ${className}`}>
+  <button type="button" class="btn-preferred-source">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+    </svg>
+    <span>Tambah sebagai Sumber Favorit di Google</span>
+  </button>
+</div>
+
+<script>
+  function setupSourcePreferences() {
+    const buttons = document.querySelectorAll('.btn-preferred-source');
+    buttons.forEach((button) => {
+      // Prevent attaching duplicate listeners
+      if ((button as any)._hasSourcePrefListener) return;
+      (button as any)._hasSourcePrefListener = true;
+
+      button.addEventListener('click', () => {
+        const domain = 'https://eobatam.web.id';
+        if ((window as any).google && (window as any).google.news && (window as any).google.news.sourcePreferences) {
+          (window as any).google.news.sourcePreferences.showDialog({
+            forceReload: true,
+            sourceUrl: domain
+          });
+        } else {
+          window.open(`https://www.google.com/preferences/source?q=${encodeURIComponent(domain)}`, '_blank');
+        }
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', setupSourcePreferences);
+  document.addEventListener('astro:page-load', setupSourcePreferences);
+</script>
+
+<style>
+  .btn-preferred-source {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    background: #002366;
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    border-radius: 6px;
+    border: 1px solid #001a4d;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 35, 102, 0.15);
+  }
+
+  .btn-preferred-source:hover {
+    background: #0c3d9c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 35, 102, 0.25);
+  }
+
+  .btn-preferred-source:active {
+    transform: translateY(0);
+  }
+</style>

@@ -1,0 +1,136 @@
+---
+import Logo from './Logo.astro';
+
+const navLinks = [
+  { name: 'Beranda', href: '/' },
+  { name: 'Layanan', href: '/layanan/' },
+  { name: 'Blog', href: '/blog/' },
+  { name: 'Tentang Kami', href: '/tentang-kami/' },
+  { name: 'Kontak', href: '/kontak/' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-[#002366] text-white border-b border-[#00d4ff]/20 shadow-md">
+  <!-- Top Bar: Industrial Precision Notice (Desktop Only) -->
+  <div class="hidden md:block bg-[#001845] py-1.5 px-4 text-xs font-mono border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1">
+      <div class="flex items-center gap-2 text-slate-300">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#00d4ff] animate-pulse"></span>
+        <span>KONSULTASI GRATIS: TIM SIAP DATANG LANGSUNG KE KANTOR ANDA DI BATAM</span>
+      </div>
+      <div class="flex items-center gap-4 text-[#00d4ff]">
+        <a href="https://wa.me/6281373703639" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-1.5">
+          <span>WA: 0813-7370-3639</span>
+        </a>
+        <span class="text-white/20">|</span>
+        <span class="text-slate-300 hidden md:inline">RUKO MEGA LEGENDA 2 BATAM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Brand Logo -->
+      <a href="/" class="flex items-center gap-3 group">
+        <Logo class="w-11 h-11 group-hover:scale-105 transition-transform drop-shadow-[0_2px_8px_rgba(0,212,255,0.3)]" />
+        <div class="flex flex-col">
+          <span class="font-mono font-bold tracking-wider text-lg leading-tight text-white group-hover:text-[#00d4ff] transition-colors">
+            EO BATAM PRODUCTION
+          </span>
+          <span class="text-[11px] font-mono text-[#00d4ff] tracking-widest uppercase">
+            Event Organizer All-in-One Batam
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 font-mono text-sm tracking-wide">
+        {navLinks.map((link) => {
+          const isActive = currentPath === link.href || (link.href !== '/' && currentPath.startsWith(link.href));
+          return (
+            <a
+              href={link.href}
+              class={`px-3 py-2 rounded transition-colors ${
+                isActive
+                  ? 'text-[#00d4ff] bg-white/10 font-bold border-b-2 border-[#00d4ff]'
+                  : 'text-slate-200 hover:text-[#00d4ff] hover:bg-white/5'
+              }`}
+            >
+              {link.name}
+            </a>
+          );
+        })}
+      </nav>
+
+      <!-- Action Button -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a
+          href="https://wa.me/6281373703639?text=Halo%20EO%20Batam%20Production,%20saya%20ingin%20konsultasi%20rencana%20event%20perusahaan"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-mono text-xs uppercase font-bold px-4 py-2.5 rounded bg-[#00d4ff] text-[#001845] hover:bg-white hover:text-[#002366] transition-all shadow-sm flex items-center gap-2"
+        >
+          <span>Undang Diskusi ke Kantor</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="flex md:hidden">
+        <button
+          type="button"
+          id="mobile-menu-toggle"
+          aria-label="Toggle navigation menu"
+          class="p-2 rounded text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-[#001845] border-t border-white/10 px-4 pt-2 pb-6 space-y-2 font-mono">
+    {navLinks.map((link) => (
+      <a
+        href={link.href}
+        class="block px-3 py-2 rounded text-base text-slate-200 hover:text-[#00d4ff] hover:bg-white/5"
+      >
+        {link.name}
+      </a>
+    ))}
+    <div class="pt-4 border-t border-white/10">
+      <a
+        href="https://wa.me/6281373703639?text=Halo%20EO%20Batam%20Production,%20saya%20ingin%20konsultasi%20rencana%20event%20perusahaan"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block text-center font-mono text-xs uppercase font-bold px-4 py-3 rounded bg-[#00d4ff] text-[#001845]"
+      >
+        Undang Diskusi ke Kantor (WA)
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Pure vanilla JS for menu toggle - zero framework overhead
+  // Event delegation on document so the listener survives Astro view
+  // transitions (<ClientRouter />) that replace the header DOM on navigation.
+  document.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest('#mobile-menu-toggle');
+    if (!btn) return;
+    document.getElementById('mobile-menu')?.classList.toggle('hidden');
+  });
+
+  // Safety net: if a page loads with the menu open, reset it to closed.
+  document.addEventListener('astro:page-load', () => {
+    document.getElementById('mobile-menu')?.classList.add('hidden');
+  });
+</script>

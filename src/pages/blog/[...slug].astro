@@ -1,0 +1,359 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ContactCTA from '../../components/ContactCTA.astro';
+import GoogleSourcePreferences from '../../components/GoogleSourcePreferences.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+
+const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const featuredImage = post.data.image || '/images/blog/default-blog.webp';
+const articleUrl = `https://eobatam.web.id/blog/${post.id}/`;
+const fullImageUrl = new URL(featuredImage, Astro.site || 'https://eobatam.web.id').href;
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": post.data.title,
+  "description": post.data.description,
+  "image": fullImageUrl,
+  "datePublished": post.data.publishDate.toISOString(),
+  "dateModified": post.data.publishDate.toISOString(),
+  "author": {
+    "@type": "Person",
+    "name": post.data.author,
+    "url": "https://eobatam.web.id/author/zazuli/",
+    "image": "https://eobatam.web.id/images/author/zazuli.webp",
+    "jobTitle": "Praktisi Event Organizer"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "EO Batam Production",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://eobatam.web.id/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": articleUrl
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Beranda",
+      "item": "https://eobatam.web.id/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://eobatam.web.id/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": post.data.title,
+      "item": articleUrl
+    }
+  ]
+};
+const schemas: any[] = [articleSchema, breadcrumbSchema];
+
+if (post.data.faq && post.data.faq.length > 0) {
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": post.data.faq.map((item: { q: string; a: string }) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  });
+}
+---
+
+<BaseLayout
+  title={`${post.data.title} - EO Batam Production`}
+  description={post.data.description}
+  image={featuredImage}
+  schema={schemas}
+>
+  <Breadcrumbs
+    items={[
+      { name: 'Blog', href: '/blog/' },
+      { name: post.data.title }
+    ]}
+  />
+
+  <article class="py-12 sm:py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Article Header -->
+      <header class="border-b border-slate-200 pb-8 mb-10 space-y-4">
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-1 rounded bg-blue-50 text-[#002366] text-xs font-mono uppercase font-bold border border-blue-200">
+            {post.data.category}
+          </span>
+          <span class="text-xs font-mono text-slate-400">
+            {post.data.publishDate.toISOString().split('T')[0]}
+          </span>
+        </div>
+
+        <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#002366] font-sans tracking-tight leading-tight">
+          {post.data.title}
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-sans max-w-4xl">
+          {post.data.description}
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-slate-500">
+          <a href="/author/zazuli/" class="hover:text-[#002366] hover:underline">
+            Penulis: {post.data.author}
+          </a>
+          <span>Area Operasi: Seluruh Kota Batam, Kepri</span>
+        </div>
+      </header>
+
+      <!-- Main Layout: Content (Left) + Sticky Sidebar (Right) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+        
+        <!-- Left Column: Main Article Body -->
+        <div class="lg:col-span-8 min-w-0">
+          
+          <!-- Featured Image (Aspect Ratio 4:3) -->
+          <div class="mb-10 aspect-[4/3] w-full overflow-hidden rounded-xl border border-slate-200 bg-slate-100 shadow-sm relative">
+            <img
+              src={featuredImage}
+              alt={post.data.title}
+              width="800"
+              height="600"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+
+          <!-- Markdown Prose Content -->
+          <div class="markdown-content prose prose-slate max-w-none">
+            <Content />
+          </div>
+
+          <!-- Author Card -->
+          <div class="mt-14 pt-8 border-t border-slate-200">
+            <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row gap-5 items-start">
+              <a href="/author/zazuli/" class="shrink-0" aria-label="Lihat profil Muhammad Zazuli">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-[#002366] bg-slate-100">
+                  <img
+                    src="/images/author/zazuli.webp"
+                    alt="Muhammad Zazuli, penulis artikel EO Batam Production"
+                    width="250"
+                    height="250"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <div class="space-y-2 min-w-0">
+                <span class="font-mono text-[10px] font-bold text-[#002366] uppercase tracking-wider block">
+                  Tentang Penulis
+                </span>
+                <h3 class="text-base font-bold text-[#002366] !my-0">
+                  <a href="/author/zazuli/" class="hover:text-[#00d4ff] hover:underline">
+                    {post.data.author}
+                  </a>
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed !mb-0">
+                  Praktisi event organizer sejak tahun 2008 di Palembang. Terlibat dalam perayaan HUT Pusri, Pertamina, Pegadaian, peresmian jalan tol, hingga festival berskala nasional.
+                </p>
+                <a href="/author/zazuli/" class="inline-flex items-center gap-1 font-mono text-xs font-bold text-[#002366] hover:text-[#00d4ff] pt-1">
+                  <span>Lihat Profil Penulis</span>
+                  <span class="text-[#00d4ff]">›</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Section -->
+          {post.data.faq && post.data.faq.length > 0 && (
+            <div class="mt-14 pt-8 border-t border-slate-200">
+              <div class="flex items-center gap-2 mb-6">
+                <span class="w-2.5 h-2.5 bg-[#00d4ff] rounded-full"></span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-[#002366] tracking-tight !my-0 !border-0 !p-0">
+                  Pertanyaan Umum (FAQ)
+                </h2>
+              </div>
+              <div class="space-y-4">
+                {post.data.faq.map((item: { q: string; a: string }) => (
+                  <div class="bg-slate-50 border border-slate-200 rounded-lg p-5">
+                    <h3 class="text-base font-bold text-[#002366] mb-2 !mt-0">{item.q}</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed !mb-0">{item.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <!-- Google Source Preferences -->
+          <div class="mt-10">
+            <GoogleSourcePreferences />
+          </div>
+
+          <!-- Bottom In-Post Lead Banner -->
+          <div class="mt-10 p-6 sm:p-8 bg-blue-50 border-2 border-[#002366] rounded-xl space-y-4">
+            <div class="font-mono text-xs font-bold text-[#002366] uppercase tracking-wider">
+              KONSULTASI GRATIS & SURVEY LOKASI
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-[#002366] !mt-0">
+              Butuh Pendampingan Langsung Merancang Acara Kantor Anda di Batam?
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed !mb-0">
+              Tim konsultan EO Batam Production siap datang langsung ke kantor perusahaan Anda di seluruh wilayah Batam untuk presentasi konsep, survey venue, dan penyusunan RAB transparan tanpa dipungut biaya.
+            </p>
+            <div class="pt-2">
+              <a
+                href="https://wa.me/6281373703639?text=Halo%20EO%20Batam,%20saya%20membaca%20artikel%20dan%20ingin%20konsultasi%20event%20kantor"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block font-mono text-xs uppercase font-bold py-3 px-6 rounded bg-[#002366] text-white hover:bg-[#0c3d9c] transition-colors shadow-sm"
+              >
+                Hubungi Kami via WhatsApp (0813-7370-3639)
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Sticky Sidebar (TOC & CTA) -->
+        <aside class="lg:col-span-4 min-w-0 h-full relative">
+          <div class="sticky top-24 space-y-6" style="position: -webkit-sticky; position: sticky; top: 6rem;">
+            
+            <!-- Widget 1: Table of Contents (TOC) -->
+            {tocHeadings && tocHeadings.length > 0 && (
+              <div class="bg-slate-50 border-2 border-slate-200 rounded-xl p-5 shadow-sm">
+                <div class="flex items-center gap-2 pb-3 mb-3 border-b border-slate-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[#002366]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                  </svg>
+                  <span class="font-mono text-xs uppercase font-bold tracking-wider text-[#002366]">
+                    DAFTAR ISI ARTIKEL
+                  </span>
+                </div>
+                <nav class="max-h-[220px] overflow-y-auto pr-2 space-y-1.5 text-xs">
+                  {tocHeadings.map((heading) => (
+                    <a
+                      href={`#${heading.slug}`}
+                      class={`block transition-colors hover:text-black leading-snug ${
+                        heading.depth === 2
+                          ? 'font-bold text-slate-800'
+                          : 'pl-4 text-slate-600 border-l border-slate-300'
+                      }`}
+                    >
+                      {heading.text}
+                    </a>
+                  ))}
+                </nav>
+              </div>
+            )}
+
+            <!-- Widget 2: Sticky Lead Generation CTA -->
+            <div class="bg-[#001845] text-white border-2 border-[#00d4ff] rounded-xl p-6 shadow-md space-y-4">
+              <span class="inline-block px-2.5 py-1 bg-[#00d4ff]/20 text-[#00d4ff] text-[10px] font-mono uppercase font-bold rounded border border-[#00d4ff]/40">
+                LAYANAN KHUSUS KORPORASI
+              </span>
+              <h3 class="text-base sm:text-lg font-bold text-white leading-snug">
+                Siap Datang Langsung ke Kantor Perusahaan Anda
+              </h3>
+              <p class="text-xs text-slate-300 leading-relaxed font-sans">
+                Diskusi konsep, cek ketersediaan venue pantai/ballroom, dan simulasi RAB transparan bersama konsultan ahli kami.
+              </p>
+
+              <div class="pt-2">
+                <a
+                  href="https://wa.me/6281373703639?text=Halo%20EO%20Batam,%20saya%20ingin%20konsultasi%20event%20dan%20mengundang%20tim%20ke%20kantor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full text-center block font-mono text-xs uppercase font-bold py-3 px-4 rounded bg-[#00d4ff] text-[#001845] hover:bg-white transition-colors shadow-sm"
+                >
+                  Konsultasi via WhatsApp
+                </a>
+              </div>
+
+              <div class="pt-2 border-t border-white/10 space-y-1.5 text-[11px] font-mono text-slate-300">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"></span>
+                  <span>WhatsApp: 0813-7370-3639</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"></span>
+                  <span>Kantor: Ruko Mega Legenda 2 Batam</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"></span>
+                  <span>Free On-Site Survey & RAB</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Widget 3: Layanan Terkait -->
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 text-xs">
+              <h4 class="font-mono text-xs font-bold uppercase text-[#002366] tracking-wider mb-3">
+                HUBUNGI KAMI UNTUK
+              </h4>
+              <ul class="space-y-2 text-slate-700">
+                <li>
+                  <a href="/layanan/corporate-gathering-batam/" class="hover:text-black flex items-center gap-1.5">
+                    <span class="text-[#00d4ff] font-bold">›</span>
+                    <span>Corporate & Family Gathering</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/layanan/outbound-team-building-batam/" class="hover:text-black flex items-center gap-1.5">
+                    <span class="text-[#00d4ff] font-bold">›</span>
+                    <span>Outbound Pantai & Team Building</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/layanan/mice-event-organizer-batam/" class="hover:text-black flex items-center gap-1.5">
+                    <span class="text-[#00d4ff] font-bold">›</span>
+                    <span>Konferensi MICE & Seminar</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/layanan/gala-dinner-awarding-batam/" class="hover:text-black flex items-center gap-1.5">
+                    <span class="text-[#00d4ff] font-bold">›</span>
+                    <span>Gala Dinner & Awarding Night</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </article>
+
+  <ContactCTA />
+</BaseLayout>

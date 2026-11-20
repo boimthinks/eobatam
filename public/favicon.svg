@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#001845"/>
+      <stop offset="100%" stop-color="#002366"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0088cc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Rounded Shield -->
+  <rect width="64" height="64" rx="14" fill="url(#favBg)"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" stroke="url(#cyanGlow)" stroke-width="2" stroke-opacity="0.8"/>
+
+  <!-- Geometric Stage & Spotlight / Hexagon Crown -->
+  <path d="M32 10 L48 20 V38 L32 48 L16 38 V20 Z" stroke="#00d4ff" stroke-width="2" stroke-linejoin="round" fill="rgba(0, 212, 255, 0.08)"/>
+
+  <!-- Central Dynamic Monogram: E and O Interlocked -->
+  <!-- Letter E -->
+  <path d="M22 23 H31 M22 29 H28 M22 35 H31 M22 23 V35" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Letter O with pulse beacon -->
+  <circle cx="40" cy="29" r="6" stroke="#00d4ff" stroke-width="2.6" fill="none"/>
+  <circle cx="40" cy="29" r="2" fill="#FFFFFF"/>
+
+  <!-- Base Foundation / Stage Arc -->
+  <path d="M20 52 C26 50, 38 50, 44 52" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+</svg>

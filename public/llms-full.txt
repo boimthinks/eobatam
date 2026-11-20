@@ -1,0 +1,29 @@
+# Direktori Lengkap & Struktur Knowledge Base EO Batam Production
+
+> File ini menyajikan peta struktur situs, rujukan teknis spesifikasi event organizer di Batam, dan indeks artikel panduan yang dapat diakses oleh sistem kecerdasan buatan (LLMs).
+
+Domain: https://eobatam.web.id
+Brand: EO Batam Production
+Wilayah: Batam, Kepulauan Riau, Indonesia
+
+## Halaman Utama & Layanan
+- [Beranda](https://eobatam.web.id/): Solusi event organizer B2B dan korporasi terpercaya di Batam.
+- [Semua Layanan](https://eobatam.web.id/layanan/): Katalog layanan penyelenggaraan event terpadu.
+- [Corporate Gathering Batam](https://eobatam.web.id/layanan/corporate-gathering-batam/): Paket all-in gathering kantor, family day, dan company outing.
+- [MICE & Seminar Bisnis Batam](https://eobatam.web.id/layanan/mice-event-organizer-batam/): Penyelenggaraan konferensi, simposium, rapat kerja, dan peresmian.
+- [Outbound & Team Building Batam](https://eobatam.web.id/layanan/outbound-team-building-batam/): Program pelatihan karakter, kepemimpinan, dan dinamika kelompok di pantai Nongsa dan Barelang.
+- [Gala Dinner & Awarding Night Batam](https://eobatam.web.id/layanan/gala-dinner-awarding-batam/): Tata panggung, tata suara, lighting artistik, dan videotron untuk malam penghargaan.
+- [Tentang Kami](https://eobatam.web.id/tentang-kami/): Profil perusahaan, tim manajemen, dan nilai integritas.
+- [Hubungi Kami](https://eobatam.web.id/kontak/): Informasi alamat kantor Ruko Mega Legenda 2 Batam Kota dan jalur WhatsApp konsultan.
+
+## Direktori Artikel & Panduan Teknis (Blog)
+- [Panduan Estimasi Biaya Corporate Gathering Batam](https://eobatam.web.id/blog/estimasi-biaya-corporate-gathering-batam/): Simulasi RAB, komponen F&B, perlengkapan panggung, dan tips efisiensi anggaran per pax.
+- [Rekomendasi Lokasi Outbound Pantai di Batam](https://eobatam.web.id/blog/rekomendasi-lokasi-outbound-pantai-batam/): Ulasan komparatif pantai Nongsa, Barelang, dan Sekupang beserta aksesibilitas bus dan pasang surut air.
+- [Prosedur Izin Keramaian Polresta Barelang & Pajak BPRD Batam](https://eobatam.web.id/blog/izin-keramaian-polresta-barelang-pajak-bprd-batam/): Panduan kepatuhan legalitas hukum event komersial dan keramaian massa di Kota Batam.
+- [Rekomendasi Resort Terbaik di Batam untuk Company Gathering Kapasitas 200 Orang](https://eobatam.web.id/blog/rekomendasi-resort-gathering-batam-kapasitas-200-orang/): Ulasan komparasi Turi Beach, Batam View, Montigo, dan Harris Barelang untuk rombongan 200 pax.
+- [Susunan Rundown Acara Gala Dinner Perusahaan di Batam](https://eobatam.web.id/blog/rundown-gala-dinner-perusahaan-batam/): Alokasi waktu 3,5 jam, transisi awarding, dan koordinasi tata panggung ballroom.
+- [SOP Keamanan Panggung Rigging Pantai Outdoor di Batam](https://eobatam.web.id/blog/mitigasi-cuaca-panggung-rigging-pantai-batam/): Ballast, sling silang, grounding genset, dan mitigasi angin laut pesisir.
+- [Outbound Rekreasi vs Experiential Learning di Batam](https://eobatam.web.id/blog/outbound-rekreasi-vs-experiential-learning-batam/): Perbandingan tujuan program untuk karyawan pabrik, rasio fasilitator 1:15, rundown half-day, simulasi RAB 240 pax, dan checklist evaluasi vendor.
+- [Panduan Konferensi dan Seminar Bisnis Internasional di Batam](https://eobatam.web.id/blog/panduan-konferensi-seminar-internasional-batam/): Checklist venue Batam Center, sistem AV, registrasi digital, penerjemah, dan protokol delegasi.
+- [Logistik Pameran Jakarta ke Batam dan Alur PPFTZ 2026](https://eobatam.web.id/blog/panduan-logistik-pameran-ftz-batam/): Alur dokumen PPFTZ Pemasukan, PPBJ, pemilihan moda laut atau udara, dan instalasi booth di venue Batam.
+- [Simulasi RAB Family Gathering Karyawan 500 Pax di Batam](https://eobatam.web.id/blog/simulasi-rab-family-gathering-500-pax-batam/): Pos anggaran 500 peserta di kawasan industri Mukakuning, jadwal shift kerja, kebutuhan 12 bus, dan komparasi venue.

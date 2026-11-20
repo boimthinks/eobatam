@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+---
+
+<BaseLayout
+  title="Tentang Kami - EO Batam Production"
+  description="Profil EO Batam Production: Vendor dan event organizer all-in-one di Batam dengan komitmen transparansi anggaran, legalitas resmi, dan kemudahan konsultasi tatap muka."
+  image="/images/pages/tentang-kami.webp"
+>
+  <Breadcrumbs items={[{ name: 'Tentang Kami' }]} />
+
+  <!-- Page Header -->
+  <section class="py-16 bg-[#002366] text-white bg-grid-blueprint-dark border-b-2 border-[#00d4ff]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-4">
+        <span class="inline-block px-3 py-1 bg-white/10 text-[#00d4ff] font-mono text-xs uppercase tracking-wider rounded border border-[#00d4ff]/40">
+          PROFIL & FILOSOFI KERJA
+        </span>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-sans text-white">
+          Tentang EO Batam Production
+        </h1>
+        <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
+          Penyedia jasa manajemen dan produksi event all-in-one yang berpusat di Kota Batam, didirikan untuk menjawab kebutuhan korporasi akan penyelenggaraan acara yang terstruktur, bebas repot, dan transparan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-7 space-y-6 text-sm text-slate-700 leading-relaxed font-sans">
+          <h2 class="text-2xl font-bold text-[#002366]">
+            Pendekatan Kerja Berorientasi Kepada Kebutuhan Klien
+          </h2>
+
+          <p>
+            Menyelenggarakan acara kantor, baik gathering tahunan 200 peserta maupun konferensi bisnis internasional, sering kali membebani panitia internal (HR/GA). Kerap kali panitia harus memecah fokus antara tugas pokok harian dan koordinasi rumit dengan belasan vendor berbeda.
+          </p>
+
+          <p>
+            <strong>EO Batam Production</strong> hadir dengan konsep satu pintu manajemen (all-in-one). Kami memadukan perencanaan kreatif, manajemen talenta, pengadaan konsumsi, dukungan perangkat audio visual modern, hingga kepengurusan izin keramaian Polresta Barelang dalam satu kesatuan kerja.
+          </p>
+
+          <div class="p-6 bg-slate-50 border-l-4 border-[#002366] rounded-r space-y-2">
+            <span class="font-mono text-xs font-bold text-[#002366] block">KOMITMEN UTAMA KAMI:</span>
+            <p class="text-xs text-slate-600">
+              Kami tidak membagi fokus dengan menyewakan alat secara eceran tanpa event. Seluruh inventaris perangkat dan tim ahli kami dedikasikan penuh untuk merancang dan mengeksekusi acara perusahaan Anda dengan presisi tinggi.
+            </p>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#002366] pt-4">
+            Layanan Datang Langsung ke Kantor Anda
+          </h3>
+          <p>
+            Kami percaya bahwa komunikasi tatap muka adalah kunci merumuskan event yang sukses. Tim konsultan kami siap berkunjung langsung ke kantor perusahaan Anda di seluruh penjuru Batam (Batam Center, Nagoya, Mukakuning, Tanjung Uncang, hingga Kabil) untuk mendengarkan visi Anda, membedah opsi venue, dan merancang proposal RAB yang realistis.
+          </p>
+
+          <div class="p-6 bg-slate-50 border border-slate-200 rounded-lg flex flex-col sm:flex-row gap-5 items-start">
+            <img
+              src="/images/author/zazuli.webp"
+              alt="Muhammad Zazuli, praktisi event organizer EO Batam Production"
+              width="250"
+              height="250"
+              class="w-24 h-24 rounded-lg object-cover border border-slate-200 shrink-0"
+              loading="lazy"
+            />
+            <div class="space-y-2">
+              <span class="font-mono text-[10px] font-bold text-[#002366] uppercase tracking-wider block">
+                PRAKTISI DI BALIK STANDAR PRODUKSI
+              </span>
+              <h3 class="text-base font-bold text-[#002366] !my-0">
+                Muhammad Zazuli
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed !mb-0">
+                Praktisi event organizer yang memulai karier pada tahun 2008 di Palembang dan terlibat dalam perayaan HUT Pusri, Pertamina, Pegadaian, peresmian jalan tol, hingga festival berskala nasional.
+              </p>
+              <a href="/author/zazuli/" class="inline-flex items-center gap-1 font-mono text-xs font-bold text-[#002366] hover:text-[#00d4ff] pt-1">
+                <span>Lihat Profil Lengkap</span>
+                <span class="text-[#00d4ff]">›</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 space-y-6">
+          <!-- 4:3 Aspect Ratio Image -->
+          <div class="aspect-[4/3] w-full rounded-xl overflow-hidden border-2 border-slate-200 bg-slate-100 shadow-sm relative group">
+            <img
+              src="/images/pages/tentang-kami.webp"
+              alt="Profil EO Batam Production"
+              width="800"
+              height="600"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-6 bg-slate-50 border border-slate-200 rounded-lg space-y-4">
+            <span class="font-mono text-xs font-bold text-[#002366] uppercase tracking-wider block border-b border-slate-200 pb-2">
+              INFORMASI IDENTITAS BISNIS
+            </span>
+            
+            <div class="space-y-3 text-xs font-mono">
+              <div>
+                <span class="text-slate-400 block">NAMA RESMI / BRAND:</span>
+                <span class="font-bold text-[#002366]">EO Batam Production</span>
+              </div>
+              <div>
+                <span class="text-slate-400 block">ALAMAT KANTOR:</span>
+                <span class="text-slate-700">Ruko Mega Legenda 2 Blok B2 No.7, Baloi Permai, Batam Kota, Batam 29431</span>
+              </div>
+              <div>
+                <span class="text-slate-400 block">KONTAK WHATSAPP:</span>
+                <a href="https://wa.me/6281373703639" target="_blank" rel="noopener noreferrer" class="text-[#0c3d9c] font-bold hover:underline">
+                  0813-7370-3639
+                </a>
+              </div>
+              <div>
+                <span class="text-slate-400 block">EMAIL RESMI:</span>
+                <span class="text-slate-700">info@eobatam.web.id</span>
+              </div>
+              <div>
+                <span class="text-slate-400 block">JAM OPERASIONAL:</span>
+                <span class="text-slate-700">Senin sampai Sabtu: 08.30 sampai 17.30 WIB (Koordinasi Event: 24 Jam)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <ContactCTA />
+</BaseLayout>

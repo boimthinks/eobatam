@@ -1,0 +1,157 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { ClientRouter } from 'astro:transitions';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  image?: string;
+  schema?: object | object[];
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonical = new URL(Astro.url.pathname, Astro.site).href,
+  image = '/images/og-default.png',
+  schema,
+  noindex = false,
+} = Astro.props;
+
+const ogImageUrl = image.startsWith('http')
+  ? image
+  : new URL(image, Astro.site || 'https://eobatam.web.id').href;
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://eobatam.web.id/#website",
+  "url": "https://eobatam.web.id",
+  "name": "EO Batam Production",
+  "description": "Event Organizer and MICE All-in-One Terpercaya di Batam",
+  "inLanguage": "id-ID"
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://eobatam.web.id/#organization",
+  "name": "EO Batam Production",
+  "alternateName": ["Event Organizer Batam", "Jasa EO Batam", "EO Batam"],
+  "url": "https://eobatam.web.id",
+  "logo": "https://eobatam.web.id/favicon.svg",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+6281373703639",
+    "contactType": "customer service",
+    "areaServed": "ID",
+    "availableLanguage": ["Indonesian", "English"]
+  }
+};
+
+const businessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://eobatam.web.id/#localbusiness",
+  "name": "EO Batam Production",
+  "alternateName": ["Event Organizer Batam", "Jasa Event Organizer Batam", "EO Batam"],
+  "url": "https://eobatam.web.id",
+  "logo": "https://eobatam.web.id/favicon.svg",
+  "image": "https://eobatam.web.id/favicon.svg",
+  "description": "Event Organizer all-in-one terpercaya di Batam untuk corporate gathering, MICE, seminar, outbound team building, dan gala dinner.",
+  "telephone": "+6281373703639",
+  "email": "info@eobatam.web.id",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ruko Mega Legenda 2 Blok B2 No.7, Baloi Permai",
+    "addressLocality": "Kota Batam",
+    "addressRegion": "Kepulauan Riau",
+    "postalCode": "29431",
+    "addressCountry": "ID"
+  },
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Kota Batam"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Kepulauan Riau"
+    }
+  ],
+  "priceRange": "Rp150.000 - Rp750.000 / pax",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:30",
+      "closes": "17:30"
+    }
+  ]
+};
+
+const baseSchemas = [websiteSchema, organizationSchema, businessSchema];
+const fullSchema = schema 
+  ? [...baseSchemas, ...(Array.isArray(schema) ? schema : [schema])]
+  : baseSchemas;
+---
+
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex ? (
+      <meta name="robots" content="noindex, follow" />
+    ) : (
+      <link rel="canonical" href={canonical} />
+    )}
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:site_name" content="EO Batam Production" />
+    <meta property="og:locale" content="id_ID" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonical} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <!-- Google Fonts Preconnect & Load -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(fullSchema)} />
+
+    <!-- Astro View Transitions -->
+    <ClientRouter />
+  </head>
+  <body class="min-h-screen flex flex-col bg-white text-slate-800">
+    <Header />
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

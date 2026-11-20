@@ -1,0 +1,466 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ContactCTA from '../../components/ContactCTA.astro';
+
+const authorName = 'Muhammad Zazuli';
+const authorSlug = 'zazuli';
+const authorUrl = `https://eobatam.web.id/author/${authorSlug}/`;
+const authorImage = '/images/author/zazuli.webp';
+
+const posts = await getCollection('blog');
+const authorPosts = posts
+  .filter((post) => !post.data.draft && post.data.author === authorName)
+  .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+
+const careerCompanies = [
+  {
+    name: 'Trust Promosindo',
+    note: 'Rumah produksi event di Palembang tempat Zazuli menempa dasar koordinasi lapangan, produksi panggung, dan komunikasi dengan klien korporasi.',
+  },
+  {
+    name: 'Double D Production',
+    note: 'Pengalaman menangani produksi acara berskala besar dengan kebutuhan teknis panggung, tata cahaya, dan tata suara yang lebih kompleks.',
+  },
+  {
+    name: 'Bangun Jaya Promosindo',
+    note: 'Kedalaman pengelolaan event pemerintahan dan BUMN, termasuk koordinasi protokoler, vendor, dan jadwal produksi yang ketat.',
+  },
+];
+
+const majorEvents = [
+  {
+    name: 'Funfest 2023',
+    detail: 'Perayaan HUT Pusri ke-64',
+    tag: 'Corporate Anniversary',
+  },
+  {
+    name: 'Funfest 2024',
+    detail: 'Perayaan HUT Pusri ke-65',
+    tag: 'Corporate Anniversary',
+  },
+  {
+    name: 'Peresmian Jalan Tol Palembang - Prabumulih',
+    detail: 'Seremoni peresmian infrastruktur jalan tol',
+    tag: 'Infrastruktur',
+  },
+  {
+    name: 'Peresmian Jalan Tol Bengkulu - Taba Penanjung',
+    detail: 'Seremoni peresmian infrastruktur jalan tol',
+    tag: 'Infrastruktur',
+  },
+  {
+    name: 'Indonesia Menari 2025',
+    detail: 'Pagelaran tari massal berskala nasional',
+    tag: 'Festival',
+  },
+  {
+    name: 'HUT Pegadaian ke-123',
+    detail: 'Perayaan hari jadi perusahaan',
+    tag: 'Corporate Anniversary',
+  },
+  {
+    name: 'HUT Pertamina ke-65',
+    detail: 'Perayaan hari jadi perusahaan',
+    tag: 'Corporate Anniversary',
+  },
+  {
+    name: 'HUT BTPNS 2022',
+    detail: 'Perayaan hari jadi perusahaan',
+    tag: 'Corporate Anniversary',
+  },
+  {
+    name: 'Unity Fest Palembang',
+    detail: 'Festival kolaborasi komunitas dan korporasi',
+    tag: 'Festival',
+  },
+];
+
+const corporateClients = [
+  'Pusri',
+  'Pertamina',
+  'PLN',
+  'Djarum',
+  'Bank BRI',
+  'Bank BTPNS',
+  'Pegadaian',
+  'Wings Food',
+  'Acer',
+  'IM3',
+  'Huawei',
+  'Wuling',
+  'Trakindo',
+];
+
+const profileSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  '@id': `${authorUrl}#profilepage`,
+  url: authorUrl,
+  name: `Profil ${authorName}`,
+  description:
+    'Profil Muhammad Zazuli, praktisi event organizer dengan pengalaman sejak 2008 di Palembang yang mengawal standar produksi event korporasi EO Batam Production.',
+  isPartOf: {
+    '@type': 'WebSite',
+    '@id': 'https://eobatam.web.id/#website',
+  },
+  mainEntity: {
+    '@type': 'Person',
+    '@id': `${authorUrl}#person`,
+    name: authorName,
+    jobTitle: 'Praktisi Event Organizer',
+    description:
+      'Praktisi event organizer dengan pengalaman menangani event korporasi, BUMN, pemerintahan, dan festival berskala besar sejak tahun 2008.',
+    image: `https://eobatam.web.id${authorImage}`,
+    url: authorUrl,
+    worksFor: {
+      '@type': 'Organization',
+      '@id': 'https://eobatam.web.id/#organization',
+      name: 'EO Batam Production',
+      url: 'https://eobatam.web.id',
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Kota Batam',
+      addressRegion: 'Kepulauan Riau',
+      addressCountry: 'ID',
+    },
+    knowsAbout: [
+      'event organizer',
+      'corporate gathering',
+      'MICE dan seminar bisnis',
+      'gala dinner dan awarding night',
+      'outbound team building',
+      'manajemen produksi event',
+      'koordinasi vendor event',
+    ],
+    knowsLanguage: ['id-ID'],
+    hasOccupation: {
+      '@type': 'Occupation',
+      name: 'Event Organizer',
+      occupationLocation: {
+        '@type': 'City',
+        name: 'Batam',
+      },
+    },
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Beranda',
+      item: 'https://eobatam.web.id/',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Tentang Kami',
+      item: 'https://eobatam.web.id/tentang-kami/',
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: authorName,
+      item: authorUrl,
+    },
+  ],
+};
+
+const schemas = [profileSchema, breadcrumbSchema];
+---
+
+<BaseLayout
+  title={`${authorName} - Praktisi Event Organizer Batam | EO Batam Production`}
+  description="Profil Muhammad Zazuli, praktisi event organizer sejak 2008 di Palembang dengan pengalaman menangani HUT Pusri, Pertamina, Pegadaian, peresmian jalan tol, dan festival nasional."
+  image={authorImage}
+  schema={schemas}
+>
+  <Breadcrumbs
+    items={[
+      { name: 'Tentang Kami', href: '/tentang-kami/' },
+      { name: authorName }
+    ]}
+  />
+
+  <!-- Page Header -->
+  <section class="py-16 bg-[#002366] text-white bg-grid-blueprint-dark border-b-2 border-[#00d4ff]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+        <div class="lg:col-span-8 space-y-4">
+          <span class="inline-block px-3 py-1 bg-white/10 text-[#00d4ff] font-mono text-xs uppercase tracking-wider rounded border border-[#00d4ff]/40">
+            PROFIL PENULIS & PRAKTISI EVENT
+          </span>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-sans text-white">
+            {authorName}
+          </h1>
+          <p class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-3xl">
+            Praktisi event organizer yang memulai karier pada tahun 2008 di Palembang. Pengalaman lapangan sejak era produksi panggung konvensional hingga penanganan event korporasi, BUMN, dan festival berskala nasional kini menjadi bekal untuk mengawal standar produksi EO Batam Production.
+          </p>
+
+          <div class="flex flex-wrap gap-3 pt-2 font-mono text-xs">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-white/10 border border-white/15">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"></span>
+              Sejak 2008
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-white/10 border border-white/15">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"></span>
+              18 Tahun Pengalaman
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-white/10 border border-white/15">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"></span>
+              Palembang ke Batam
+            </span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4">
+          <div class="aspect-square w-full max-w-[280px] mx-auto rounded-xl overflow-hidden border-2 border-[#00d4ff]/40 bg-white/5 shadow-lg">
+            <img
+              src={authorImage}
+              alt={`Foto profil ${authorName}, praktisi event organizer`}
+              width="250"
+              height="250"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+        <!-- Left Column -->
+        <div class="lg:col-span-8 space-y-12 text-sm text-slate-700 leading-relaxed font-sans">
+
+          <div class="space-y-5">
+            <h2 class="text-2xl font-bold text-[#002366]">
+              Delapan Belas Tahun di Garis Depan Produksi Event
+            </h2>
+            <p>
+              Muhammad Zazuli pertama kali masuk ke industri event organizer pada tahun 2008 di Palembang. Sejak saat itu, hampir seluruh fase produksi acara ia jalani langsung di lapangan, mulai dari menyiapkan rundown, mengoordinasikan vendor panggung dan tata suara, sampai memastikan acara berjalan sesuai jadwal saat hari H.
+            </p>
+            <p>
+              Pengalaman panjang tersebut membentuk cara kerja yang bersandar pada persiapan teknis dan komunikasi yang jelas. Bagi Zazuli, keberhasilan sebuah acara bukan ditentukan oleh kemegahan panggung semata, melainkan oleh kesiapan detail kecil yang sering terlewat: alur masuk tamu, waktu sound check, kesiapan listrik cadangan, hingga simulasi urutan protokoler.
+            </p>
+            <div class="p-6 bg-slate-50 border-l-4 border-[#002366] rounded-r space-y-2">
+              <span class="font-mono text-xs font-bold text-[#002366] block">PRINSIP KERJA:</span>
+              <p class="text-xs text-slate-600">
+                Rencanakan acara dengan asumsi terburuk, eksekusi dengan disiplin waktu, dan jaga komunikasi dengan panitia klien tetap terbuka sejak rapat pertama hingga evaluasi pasca acara.
+              </p>
+            </div>
+          </div>
+
+          <div class="space-y-5">
+            <h2 class="text-2xl font-bold text-[#002366]">
+              Jejak Karier di Tiga Rumah Produksi
+            </h2>
+            <p>
+              Sebelum mengawal standar produksi di EO Batam Production, Zazuli memperdalam kemampuan produksi melalui tiga perusahaan event organizer yang berbasis di Palembang.
+            </p>
+
+            <div class="space-y-4">
+              {careerCompanies.map((company, index) => (
+                <div class="p-5 bg-slate-50 border border-slate-200 rounded-lg">
+                  <div class="flex items-start gap-4">
+                    <span class="w-8 h-8 shrink-0 rounded bg-[#002366] text-white font-mono text-xs font-bold flex items-center justify-center">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                    <div class="space-y-1.5">
+                      <h3 class="text-base font-bold text-[#002366] leading-snug">
+                        {company.name}
+                      </h3>
+                      <p class="text-xs text-slate-600 leading-relaxed">
+                        {company.note}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div class="space-y-5">
+            <h2 class="text-2xl font-bold text-[#002366]">
+              Event Besar yang Pernah Ditangani
+            </h2>
+            <p>
+              Sepanjang perjalanan kariernya, Zazuli terlibat dalam sejumlah acara berskala besar yang menuntut koordinasi lintas vendor, perizinan, dan protokoler ketat. Berikut di antaranya.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {majorEvents.map((event) => (
+                <div class="p-5 bg-white border border-slate-200 rounded-lg hover:border-[#002366] hover:shadow-sm transition-all space-y-2">
+                  <span class="inline-block px-2 py-0.5 rounded bg-blue-50 text-[#002366] font-mono text-[10px] uppercase font-bold border border-blue-200">
+                    {event.tag}
+                  </span>
+                  <h3 class="text-sm font-bold text-[#002366] leading-snug !my-0">
+                    {event.name}
+                  </h3>
+                  <p class="text-xs text-slate-600 leading-relaxed !mb-0">
+                    {event.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div class="space-y-5">
+            <h2 class="text-2xl font-bold text-[#002366]">
+              Klien Korporasi yang Pernah Ditangani
+            </h2>
+            <p>
+              Sebagian besar event yang ditangani melibatkan perusahaan milik negara, lembaga keuangan, dan merek nasional dengan standar protokoler serta kebutuhan branding yang ketat.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              {corporateClients.map((client) => (
+                <span class="px-3 py-1.5 rounded bg-slate-100 border border-slate-200 text-xs font-mono text-slate-700">
+                  {client}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div class="space-y-5">
+            <h2 class="text-2xl font-bold text-[#002366]">
+              Pengalaman Palembang untuk Kebutuhan Event Batam
+            </h2>
+            <p>
+              Palembang dan Batam memiliki karakter event yang berbeda. Palembang lekat dengan acara pemerintahan, seremoni infrastruktur, dan perayaan perusahaan berskala besar di daratan. Batam lebih banyak bergerak pada gathering korporasi lintas perusahaan, MICE, serta acara di venue resort dan ballroom yang menuntut koordinasi logistik antarwilayah.
+            </p>
+            <p>
+              Dua konteks itu membuat Zazuli terbiasa menyusun perencanaan yang tidak berhenti pada konsep kreatif. Ia mendorong tim untuk menghitung kebutuhan daya listrik panggung, jalur evakuasi, waktu tempuh antarvenue, hingga mitigasi cuaca pesisir yang kerap berubah cepat di Batam.
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <h2 class="text-2xl font-bold text-[#002366]">
+              Artikel yang Ditulis {authorName}
+            </h2>
+            <p>
+              Pengalaman lapangan tersebut dituangkan dalam artikel panduan berikut, khususnya untuk panitia dan tim HR/GA yang sedang merencanakan acara kantor.
+            </p>
+
+            <div class="space-y-3">
+              {authorPosts.map((post) => (
+                <a
+                  href={`/blog/${post.id}/`}
+                  class="block p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-[#002366] hover:bg-white transition-colors"
+                >
+                  <div class="flex flex-wrap items-center gap-2 font-mono text-[10px] text-slate-400 mb-1.5">
+                    <span class="px-2 py-0.5 rounded bg-blue-50 text-[#002366] uppercase font-bold border border-blue-200">
+                      {post.data.category}
+                    </span>
+                    <span>{post.data.publishDate.toISOString().split('T')[0]}</span>
+                  </div>
+                  <h3 class="text-sm font-bold text-[#002366] leading-snug !my-0">
+                    {post.data.title}
+                  </h3>
+                </a>
+              ))}
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Sticky Profile Card -->
+        <aside class="lg:col-span-4 min-w-0 h-full relative">
+          <div class="sticky top-24 space-y-6" style="position: -webkit-sticky; position: sticky; top: 6rem;">
+
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 space-y-5">
+              <div>
+                <span class="font-mono text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1">
+                  PROFIL PENULIS
+                </span>
+                <h2 class="text-lg font-bold text-[#002366] !my-0">
+                  {authorName}
+                </h2>
+                <p class="text-xs text-slate-500 mt-1">
+                  Praktisi Event Organizer
+                </p>
+              </div>
+
+              <div class="space-y-3 text-xs font-mono border-t border-slate-200 pt-4">
+                <div>
+                  <span class="text-slate-400 block">MULAI KARIER:</span>
+                  <span class="font-bold text-[#002366]">Tahun 2008</span>
+                </div>
+                <div>
+                  <span class="text-slate-400 block">BASIS AWAL:</span>
+                  <span class="text-slate-700">Palembang, Sumatera Selatan</span>
+                </div>
+                <div>
+                  <span class="text-slate-400 block">PENGALAMAN:</span>
+                  <span class="text-slate-700">Event korporasi, BUMN, pemerintahan, festival</span>
+                </div>
+                <div>
+                  <span class="text-slate-400 block">FOKUS SAAT INI:</span>
+                  <span class="text-slate-700">Produksi event korporasi di Batam</span>
+                </div>
+              </div>
+
+              <div class="pt-2 border-t border-slate-200 space-y-2 font-mono text-xs">
+                <a href="/tentang-kami/" class="flex items-center gap-2 text-[#002366] font-bold hover:text-[#00d4ff]">
+                  <span class="text-[#00d4ff]">›</span>
+                  <span>Profil EO Batam Production</span>
+                </a>
+                <a href="/blog/" class="flex items-center gap-2 text-[#002366] font-bold hover:text-[#00d4ff]">
+                  <span class="text-[#00d4ff]">›</span>
+                  <span>Semua Artikel & Panduan</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-[#001845] text-white border-2 border-[#00d4ff] rounded-xl p-6 shadow-md space-y-4">
+              <span class="inline-block px-2.5 py-1 bg-[#00d4ff]/20 text-[#00d4ff] text-[10px] font-mono uppercase font-bold rounded border border-[#00d4ff]/40">
+                KONSULTASI EVENT KANTOR
+              </span>
+              <h3 class="text-base sm:text-lg font-bold text-white leading-snug">
+                Diskusikan Rencana Event Anda Bersama Tim Kami
+              </h3>
+              <p class="text-xs text-slate-300 leading-relaxed font-sans">
+                Sampaikan kebutuhan gathering, MICE, atau gala dinner perusahaan Anda. Tim konsultan siap datang langsung ke kantor Anda di Batam.
+              </p>
+              <div class="pt-2">
+                <a
+                  href="https://wa.me/6281373703639?text=Halo%20EO%20Batam,%20saya%20ingin%20konsultasi%20event%20perusahaan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full text-center block font-mono text-xs uppercase font-bold py-3 px-4 rounded bg-[#00d4ff] text-[#001845] hover:bg-white transition-colors shadow-sm"
+                >
+                  Konsultasi via WhatsApp
+                </a>
+              </div>
+              <div class="pt-2 border-t border-white/10 space-y-1.5 text-[11px] font-mono text-slate-300">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"></span>
+                  <span>WhatsApp: 0813-7370-3639</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"></span>
+                  <span>Kantor: Ruko Mega Legenda 2 Batam</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <ContactCTA />
+</BaseLayout>

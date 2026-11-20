@@ -1,0 +1,582 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ContactCTA from '../../components/ContactCTA.astro';
+import GoogleSourcePreferences from '../../components/GoogleSourcePreferences.astro';
+import { servicesData, type ServiceItem } from '../../data/services';
+
+export function getStaticPaths() {
+  return servicesData.map((svc) => ({
+    params: { slug: svc.slug },
+    props: { service: svc },
+  }));
+}
+
+interface Props {
+  service: ServiceItem;
+}
+
+const { service } = Astro.props;
+
+const serviceUrl = `https://eobatam.web.id/layanan/${service.slug}/`;
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": service.title,
+  "serviceType": service.shortTitle,
+  "description": service.description,
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "EO Batam Production",
+    "telephone": "+6281373703639",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ruko Mega Legenda 2 Blok B2 No.7, Baloi Permai",
+      "addressLocality": "Kota Batam",
+      "addressRegion": "Kepulauan Riau",
+      "postalCode": "29431",
+      "addressCountry": "ID"
+    }
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Kota Batam"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "IDR",
+    "description": service.priceRange
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": service.faq.map((item) => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a
+    }
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Beranda",
+      "item": "https://eobatam.web.id/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Layanan",
+      "item": "https://eobatam.web.id/layanan/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": service.shortTitle,
+      "item": serviceUrl
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title={`${service.title} - EO Batam Production`}
+  description={service.description}
+  image={service.image}
+  schema={[serviceSchema, faqSchema, breadcrumbSchema]}
+>
+  <Breadcrumbs
+    items={[
+      { name: 'Layanan', href: '/layanan/' },
+      { name: service.shortTitle }
+    ]}
+  />
+
+  <!-- Pillar Hero Section -->
+  <section class="py-16 bg-[#002366] text-white bg-grid-blueprint-dark border-b-4 border-[#00d4ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded bg-[#00d4ff] text-[#001845] font-mono font-bold text-xs flex items-center justify-center">
+              {service.counter}
+            </span>
+            <span class="px-2.5 py-1 bg-white/10 text-[#00d4ff] font-mono text-xs uppercase tracking-wider rounded border border-[#00d4ff]/40">
+              {service.tagline}
+            </span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-sans text-white leading-tight">
+            {service.title}
+          </h1>
+
+          <p class="text-slate-200 text-base sm:text-lg leading-relaxed">
+            {service.description}
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <div class="font-mono text-xs px-3.5 py-2 bg-white/10 rounded border border-white/20 text-slate-100">
+              Estimasi Biaya: <strong class="text-[#00d4ff]">{service.priceRange}</strong>
+            </div>
+            <div class="font-mono text-xs px-3.5 py-2 bg-white/10 rounded border border-white/20 text-slate-100">
+              Cakupan: <strong>Seluruh Batam & Barelang</strong>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a
+              href={`https://wa.me/6281373703639?text=Halo%20EO%20Batam,%20saya%20ingin%20konsultasi%20layanan%20${encodeURIComponent(service.shortTitle)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 font-mono text-xs uppercase font-bold px-6 py-3.5 rounded bg-[#00d4ff] text-[#001845] hover:bg-white hover:text-[#002366] transition-all shadow-md"
+            >
+              <span>Konsultasi & Kunjungan Kantor Gratis</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="aspect-[4/3] w-full rounded-2xl overflow-hidden border-2 border-[#00d4ff]/40 shadow-2xl relative bg-slate-900 group">
+            <img
+              src={service.image}
+              alt={service.title}
+              width="800"
+              height="600"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="eager"
+            />
+            <div class="absolute bottom-3 left-3 right-3 p-2.5 bg-[#001845]/90 backdrop-blur-md rounded-lg border border-white/10 text-xs font-mono text-slate-200 flex items-center justify-between">
+              <span class="text-[#00d4ff] font-bold">MONEY PILLAR PAGE</span>
+              <span>KOTA BATAM, KEPRI</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout (Left Rich Pillar Body + Right Sticky CTA Sidebar) -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+        
+        <!-- Left Pillar Content (8 Cols) -->
+        <div class="lg:col-span-8 min-w-0 space-y-14">
+          
+          <!-- Section 1: Overview & Tantangan Logistik Lokal -->
+          <div class="space-y-4">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 bg-[#00d4ff] rounded-full"></span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-[#002366] tracking-tight">
+                Solusi Manajemen Terpadu di Kota Batam
+              </h2>
+            </div>
+            {service.overview.map((para) => (
+              <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                {para}
+              </p>
+            ))}
+          </div>
+
+          <!-- Section 2: Fitur Utama & Inklusivitas Layanan -->
+          <div class="space-y-6">
+            <h3 class="text-xl sm:text-2xl font-bold text-[#002366]">
+              Keunggulan Penyelenggaraan EO Batam Production
+            </h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {service.features.map((feature) => (
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg flex items-start gap-3">
+                  <svg class="w-4 h-4 text-[#002366] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-xs sm:text-sm text-slate-700 leading-normal">{feature}</span>
+                </div>
+              ))}
+            </div>
+
+            <div class="p-5 bg-blue-50 border-l-4 border-[#002366] rounded-r-lg space-y-2">
+              <span class="font-mono text-xs font-bold text-[#002366] uppercase tracking-wider block">
+                DELIVERABLES TERMASUK DALAM LAYANAN (ALL-IN):
+              </span>
+              <div class="flex flex-wrap gap-2 pt-1">
+                {service.included.map((inc) => (
+                  <span class="px-3 py-1 bg-white text-[#002366] text-xs font-mono font-semibold rounded border border-blue-200 shadow-2xs">
+                    {inc}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Tiered Packages (Pilihan Paket Berjenjang) -->
+          <div class="space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div>
+                <span class="font-mono text-xs text-[#002366] font-bold uppercase tracking-wider block">
+                  PILIHAN STRUKTUR ACARA
+                </span>
+                <h3 class="text-xl sm:text-2xl font-bold text-[#002366]">
+                  Paket Layanan Bertingkat Sesuai Kebutuhan Korporasi
+                </h3>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {service.packages.map((pkg) => (
+                <div class="bg-white border-2 border-slate-200 rounded-xl p-6 flex flex-col justify-between hover:border-[#002366] hover:shadow-md transition-all">
+                  <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                      <span class="px-2 py-0.5 rounded bg-blue-100 text-[#002366] text-[10px] font-mono uppercase font-bold">
+                        {pkg.badge}
+                      </span>
+                      <span class="font-mono text-[11px] text-slate-400">
+                        {pkg.targetPax}
+                      </span>
+                    </div>
+
+                    <h4 class="text-base font-bold text-[#002366] leading-snug">
+                      {pkg.name}
+                    </h4>
+
+                    <div class="py-2 border-y border-slate-100">
+                      <span class="font-mono text-xs text-[#00d4ff] font-bold block">
+                        {pkg.priceNote}
+                      </span>
+                      <span class="text-[11px] text-slate-500 font-mono">
+                        {pkg.duration}
+                      </span>
+                    </div>
+
+                    <ul class="space-y-2 text-xs text-slate-600">
+                      {pkg.deliverables.map((deliv) => (
+                        <li class="flex items-start gap-1.5">
+                          <span class="text-[#002366] font-bold mt-0.5">•</span>
+                          <span>{deliv}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div class="pt-6 mt-4 border-t border-slate-100">
+                    <a
+                      href={`https://wa.me/6281373703639?text=Halo%20EO%20Batam,%20saya%20tertarik%20dengan%20${encodeURIComponent(pkg.name)}%20untuk%20layanan%20${encodeURIComponent(service.shortTitle)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center justify-center gap-2 text-center font-mono text-xs uppercase font-bold py-2.5 px-3 rounded bg-[#002366] text-white hover:bg-[#0c3d9c] transition-colors"
+                    >
+                      Pilih Paket Ini
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Section 4: Simulasi RAB & Transparansi Biaya -->
+          <div class="space-y-4">
+            <h3 class="text-xl sm:text-2xl font-bold text-[#002366]">
+              Simulasi Alokasi Anggaran (RAB) Transparan
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Kami menjunjung transparansi penuh tanpa mark-up liar. Berikut adalah distribusi proporsi umum alokasi biaya untuk penyelenggaraan {service.shortTitle} di Kota Batam:
+            </p>
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs sm:text-sm border border-slate-200 rounded-lg overflow-hidden">
+                <thead class="bg-[#002366] text-white font-mono uppercase text-xs">
+                  <tr>
+                    <th class="p-3 border-r border-[#001845]">Komponen Anggaran</th>
+                    <th class="p-3 border-r border-[#001845] w-28">Porsi Biaya</th>
+                    <th class="p-3">Rincian Pos Kerja</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                  {service.rabBreakdown.map((rab) => (
+                    <tr class="hover:bg-slate-50">
+                      <td class="p-3 font-bold text-[#002366] border-r border-slate-200">{rab.component}</td>
+                      <td class="p-3 font-mono font-bold text-[#0c3d9c] border-r border-slate-200">{rab.percentage}</td>
+                      <td class="p-3 text-slate-600">{rab.description}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Section 5: Hardware & Spesifikasi Perangkat Fisik Mandiri -->
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl sm:text-2xl font-bold text-[#002366]">
+                Spesifikasi Teknis Hardware & Armada Produksi Mandiri
+              </h3>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Kami tidak melempar pesanan Anda ke sub-vendor pihak ketiga. Seluruh perangkat audio visual, panggung, dan genset kami miliki dan kelola sendiri:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {service.hardwareSpecs.map((spec) => (
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
+                  <span class="font-mono text-[10px] uppercase font-bold text-slate-400 block">
+                    {spec.category}
+                  </span>
+                  <h5 class="text-sm font-bold text-[#002366]">
+                    {spec.equipment}
+                  </h5>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    {spec.specification}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Section 6: Analisis Komparasi Venue di Batam -->
+          <div class="space-y-4">
+            <h3 class="text-xl sm:text-2xl font-bold text-[#002366]">
+              Panduan & Analisis Karakteristik Venue di Batam
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Setiap venue di Batam memiliki karakteristik tersendiri terkait aksesibilitas, kapasitas muat rombongan bus, dan hembusan angin laut:
+            </p>
+
+            <div class="space-y-3">
+              {service.venueAnalysis.map((venue) => (
+                <div class="p-4 bg-white border border-slate-200 rounded-lg hover:border-[#002366] transition-all space-y-2">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <h5 class="text-sm font-bold text-[#002366]">
+                      {venue.name} ({venue.area})
+                    </h5>
+                    <span class="px-2 py-0.5 rounded bg-blue-50 text-[#002366] text-xs font-mono font-bold border border-blue-200">
+                      Kapasitas: {venue.capacity}
+                    </span>
+                  </div>
+                  <p class="text-xs text-slate-700">
+                    <strong class="text-slate-900">Optimal Untuk:</strong> {venue.bestFor}
+                  </p>
+                  <p class="text-xs text-slate-500 font-mono">
+                    <strong class="text-slate-700">Catatan Lapangan:</strong> {venue.notes}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Section 7: SOP Pelaksanaan, K3 & Legalitas Resmi -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+            
+            <div class="space-y-4">
+              <h4 class="text-lg font-bold text-[#002366] border-b border-slate-200 pb-2">
+                SOP Tahapan Pelaksanaan
+              </h4>
+              <div class="space-y-3">
+                {service.sopSteps.map((step) => (
+                  <div class="text-xs space-y-1">
+                    <div class="flex items-center justify-between font-mono font-bold text-[#002366]">
+                      <span>{step.step}</span>
+                      <span class="text-slate-400 text-[11px]">{step.timeline}</span>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">{step.details}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <div class="space-y-3">
+                <h4 class="text-lg font-bold text-[#002366] border-b border-slate-200 pb-2">
+                  Protokol K3 & Mitigasi Risiko
+                </h4>
+                <ul class="text-xs text-slate-600 space-y-2">
+                  {service.safetyMitigation.map((safe) => (
+                    <li class="flex items-start gap-1.5">
+                      <span class="text-[#00d4ff] font-bold">›</span>
+                      <span>{safe}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div class="space-y-3">
+                <h4 class="text-lg font-bold text-[#002366] border-b border-slate-200 pb-2">
+                  Legalitas & Pajak Daerah Batam
+                </h4>
+                <ul class="text-xs text-slate-600 space-y-2">
+                  {service.legalNotes.map((leg) => (
+                    <li class="flex items-start gap-1.5">
+                      <span class="text-[#002366] font-bold">›</span>
+                      <span>{leg}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Section 8: FAQ Komprehensif (6 Butir) -->
+          <div class="space-y-6 pt-6 border-t border-slate-200">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 bg-[#00d4ff] rounded-full"></span>
+              <h3 class="text-2xl font-extrabold text-[#002366] tracking-tight">
+                Pertanyaan Umum Mengenai Layanan Ini (FAQ)
+              </h3>
+            </div>
+
+            <div class="space-y-4">
+              {service.faq.map((item) => (
+                <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 space-y-2">
+                  <h4 class="text-sm font-bold text-[#002366]">
+                    {item.q}
+                  </h4>
+                  <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    {item.a}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Section 9: Hub Artikel Blog Pendukung (Spoke Articles) -->
+          {service.relatedSpokes && service.relatedSpokes.length > 0 && (
+            <div class="space-y-4 pt-6 border-t border-slate-200">
+              <span class="font-mono text-xs text-[#002366] font-bold uppercase tracking-wider block">
+                KNOWLEDGE BASE & PANDUAN PENDUKUNG
+              </span>
+              <h3 class="text-xl font-bold text-[#002366]">
+                Artikel Pendukung Terkait Layanan Ini
+              </h3>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {service.relatedSpokes.map((spoke) => (
+                  <a
+                    href={spoke.href}
+                    class="p-4 bg-white border border-slate-200 rounded-lg hover:border-[#002366] hover:shadow-sm transition-all block group"
+                  >
+                    <h5 class="text-sm font-bold text-[#002366] group-hover:text-[#0c3d9c] group-hover:underline mb-1">
+                      {spoke.title}
+                    </h5>
+                    <p class="text-xs text-slate-500 line-clamp-2">
+                      {spoke.excerpt}
+                    </p>
+                    <span class="inline-flex items-center gap-1.5 mt-2 font-mono text-[11px] font-bold text-[#00d4ff]">
+                      Baca Selengkapnya
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <!-- Google Source Preferences -->
+          <div class="pt-4">
+            <GoogleSourcePreferences />
+          </div>
+
+        </div>
+
+        <!-- Right Sticky Sidebar CTA (4 Cols) -->
+        <aside class="lg:col-span-4 min-w-0 h-full relative">
+          <div class="sticky top-24 space-y-6" style="position: -webkit-sticky; position: sticky; top: 6rem;">
+            
+            <!-- Sticky Consultation Card -->
+            <div class="bg-[#001845] text-white border-2 border-[#00d4ff] rounded-2xl p-6 shadow-xl space-y-5">
+              <span class="inline-block px-2.5 py-1 bg-[#00d4ff]/20 text-[#00d4ff] text-[10px] font-mono uppercase font-bold rounded border border-[#00d4ff]/40">
+                LAYANAN KHUSUS KORPORASI
+              </span>
+              
+              <h3 class="text-lg font-bold text-white leading-snug">
+                Undang Tim EO Datang Langsung ke Kantor Anda
+              </h3>
+
+              <p class="text-xs text-slate-300 leading-relaxed font-sans">
+                Diskusikan konsep acara, cek tanggal ketersediaan venue, dan buat simulasi anggaran transparan langsung di kantor Anda tanpa komitmen biaya.
+              </p>
+
+              <div class="space-y-2 pt-1">
+                <a
+                  href={`https://wa.me/6281373703639?text=Halo%20EO%20Batam,%20saya%20ingin%20mengundang%20tim%20ke%20kantor%20untuk%20layanan%20${encodeURIComponent(service.shortTitle)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full text-center block font-mono text-xs uppercase font-bold py-3.5 px-4 rounded bg-[#00d4ff] text-[#001845] hover:bg-white hover:text-[#002366] transition-colors shadow-md"
+                >
+                  Jadwalkan Kunjungan (WhatsApp)
+                </a>
+
+                <a
+                  href="tel:+6281373703639"
+                  class="w-full text-center block font-mono text-xs uppercase font-bold py-2.5 px-4 rounded bg-white/10 text-white hover:bg-white/20 transition-colors"
+                >
+                  Telepon: 0813-7370-3639
+                </a>
+              </div>
+
+              <div class="pt-3 border-t border-white/10 space-y-2 text-[11px] font-mono text-slate-300">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"></span>
+                  <span>Ruko Mega Legenda 2 Batam</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"></span>
+                  <span>Free RAB & Site Survey</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"></span>
+                  <span>Kepemilikan Alat Mandiri (No Sub)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Other Services Menu -->
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-3">
+              <span class="font-mono text-xs font-bold text-[#002366] uppercase tracking-wider block border-b border-slate-200 pb-2">
+                PILIHAN LAYANAN LAINNYA
+              </span>
+              <ul class="space-y-2 text-xs">
+                {servicesData.filter((s) => s.slug !== service.slug).map((other) => (
+                  <li>
+                    <a
+                      href={`/layanan/${other.slug}/`}
+                      class="text-slate-700 hover:text-[#002366] hover:underline flex items-center justify-between group"
+                    >
+                      <span class="group-hover:translate-x-1 transition-transform">› {other.shortTitle}</span>
+                      <span class="font-mono text-[10px] text-slate-400">{other.counter}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </section>
+
+  <ContactCTA />
+</BaseLayout>
