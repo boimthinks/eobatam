@@ -4,13 +4,12 @@ description: "Rincian estimasi biaya paket gathering kantor di Batam per orang, 
 publishDate: "2026-10-20"
 author: "Muhammad Zazuli"
 category: "Gathering"
-tags: ["eo batam", "gathering kantor batam", "biaya gathering batam", "rab event"]
+tags: ["eo batam", "gathering kantor batam", "biaya gathering batam", "rab event", "event organizer batam"]
 image: "/images/blog/estimasi-biaya-gathering.webp"
 schemaType: "Article"
 draft: false
 ---
-
-Menyusun rencana anggaran biaya (RAB) untuk gathering kantor atau family day perusahaan di Batam membutuhkan pemahaman karakteristik logistik lokal. Batam memiliki keunikan geografis kepulauan dengan sentra venue yang terbagi antara kawasan resort pantai di Nongsa dan Barelang, serta hotel bisnis MICE di Batam Center dan Harbour Bay.
+Menyusun rencana anggaran biaya (RAB) untuk gathering kantor atau family day perusahaan di Batam membutuhkan pemahaman karakteristik logistik lokal. Batam memiliki keunikan geografis kepulauan dengan sentra venue yang terbagi antara kawasan resort pantai di Nongsa dan Barelang, serta hotel bisnis MICE di Batam Center dan Harbour Bay. Dalam praktik kami sebagai jasa event organizer Batam, pembengkakan anggaran paling sering terjadi bukan pada konsumsi, melainkan pada pos teknis yang dianggap remeh.
 
 Tanpa perencanaan yang cermat, panitia sering kali menghadapi pembengkakan anggaran pada pos teknis seperti perizinan, sound system luar ruangan, dan transportasi rombongan.
 

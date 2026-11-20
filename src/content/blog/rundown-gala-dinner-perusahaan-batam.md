@@ -4,7 +4,7 @@ description: "Panduan susunan rundown gala dinner perusahaan di Batam agar tidak
 publishDate: "2026-11-09"
 author: "Muhammad Zazuli"
 category: "Gala Dinner"
-tags: ["rundown gala dinner batam", "eo gala dinner batam", "annual dinner batam", "susunan acara gala dinner"]
+tags: ["rundown gala dinner batam", "eo gala dinner batam", "annual dinner batam", "susunan acara gala dinner", "event organizer batam"]
 image: "/images/blog/rundown-gala-dinner-perusahaan-batam.webp"
 schemaType: "Article"
 draft: false
@@ -18,8 +18,7 @@ faq:
   - q: "Apakah EO Batam Production menyediakan gladi resik sebelum acara dimulai?"
     a: "Ya, setiap paket gala dinner mencakup dry run dan gladi resik teknis pada H-1 atau sore hari H bersama MC, operator pencahayaan, teknisi audio, dan panitia inti."
 ---
-
-Menyusun susunan rundown gala dinner dan malam penghargaan perusahaan di Batam membutuhkan kecermatan ritme panggung. Banyak panitia internal terjebak dalam susunan acara kaku yang dipenuhi rentetan pidato panjang tanpa jeda interaktif. Akibatnya, perhatian tamu undangan menurun sebelum sesi puncak penghargaan dimulai.
+Menyusun susunan rundown gala dinner dan malam penghargaan perusahaan di Batam membutuhkan kecermatan ritme panggung. Banyak panitia internal terjebak dalam susunan acara kaku yang dipenuhi rentetan pidato panjang tanpa jeda interaktif. Akibatnya, perhatian tamu undangan menurun sebelum sesi puncak penghargaan dimulai. Rundown berikut adalah template yang tim jasa event organizer Batam kami gunakan berulang kali dan terbukti berjalan mulus.
 
 Karakteristik tamu korporasi di Batam, mulai dari kawasan industri Mukakuning, galangan kapal Batu Ampar, hingga kantor pusat bisnis Batam Center, menginginkan acara malam yang elegan namun tetap cair dan menghibur.
 

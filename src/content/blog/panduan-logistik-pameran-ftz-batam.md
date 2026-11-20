@@ -4,7 +4,7 @@ description: "Prosedur memasukkan perlengkapan pameran dari Jakarta ke Batam lew
 publishDate: "2026-11-14"
 author: "Muhammad Zazuli"
 category: "MICE"
-tags: ["logistik pameran batam", "ppftz pemasukan batam", "pabean ftz batam", "kirim booth pameran jakarta batam", "vendor mice batam"]
+tags: ["logistik pameran batam", "ppftz pemasukan batam", "pabean ftz batam", "kirim booth pameran jakarta batam", "vendor mice batam", "event organizer batam"]
 image: "/images/blog/panduan-logistik-pameran-ftz-batam.webp"
 schemaType: "Article"
 draft: false
@@ -22,8 +22,7 @@ faq:
   - q: "Apakah EO Batam bisa mengurus logistik pameran dan pemasangannya?"
     a: "Ya. Cakupan layanan MICE kami mencakup koordinasi pengiriman, penanganan dokumen pabean bersama mitra PPJK, trucking dari pelabuhan ke venue, tenaga instalasi booth, sistem AV, registrasi peserta, dan dokumentasi. Konsultasi awal serta survei venue di Batam tidak dipungut biaya. Hubungi WhatsApp 0813-7370-3639 atau email info@eobatam.web.id."
 ---
-
-Logistik pameran Jakarta ke Batam tidak melewati bea masuk seperti impor barang dari luar negeri, tetapi tetap wajib pemberitahuan pabean. Batam berstatus kawasan perdagangan bebas dan pelabuhan bebas, sehingga barang yang masuk dari Jakarta harus tercatat di sistem Bea Cukai. Yang paling sering salah di dokumen vendor adalah kode PPFTZ, karena kode lama sudah tidak berlaku sejak 2025.
+Logistik pameran Jakarta ke Batam tidak melewati bea masuk seperti impor barang dari luar negeri, tetapi tetap wajib pemberitahuan pabean. Batam berstatus kawasan perdagangan bebas dan pelabuhan bebas, sehingga barang yang masuk dari Jakarta harus tercatat di sistem Bea Cukai. Yang paling sering salah di dokumen vendor adalah kode PPFTZ, karena kode lama sudah tidak berlaku sejak 2025. Tim jasa event organizer Batam kami menangani paperwork pabean ini rutin, dan panduan berikut merangkum alur terkininya.
 
 Bagi panitia, kesalahan kode dokumen bukan urusan administratif kecil. Barang bisa tertahan di pelabuhan, jadwal instalasi booth bergeser, dan biaya sewa gedung tetap berjalan. Artikel ini memetakan alur yang berlaku pada 2026 untuk perlengkapan pameran, dari berkas di Jakarta sampai serah terima krat di venue Batam.
 

@@ -4,7 +4,7 @@ description: "Simulasi RAB family gathering 500 pax di kawasan industri Mukakuni
 publishDate: "2026-11-16"
 author: "Muhammad Zazuli"
 category: "Gathering"
-tags: ["family gathering 500 pax batam", "simulasi rab gathering batam", "gathering karyawan mukakuning", "eo gathering kantor batam", "family day pabrik batam"]
+tags: ["family gathering 500 pax batam", "simulasi rab gathering batam", "gathering karyawan mukakuning", "eo gathering kantor batam", "family day pabrik batam", "event organizer batam"]
 image: "/images/blog/simulasi-rab-family-gathering-500-pax-batam_poco.webp"
 schemaType: "Article"
 draft: false
@@ -22,8 +22,7 @@ faq:
   - q: "Apakah EO Batam Production bisa survei lokasi sebelum anggaran disetujui?"
     a: "Bisa dan tanpa biaya. Tim kami datang ke kantor atau kawasan pabrik Anda di Batam untuk membedah jumlah peserta per shift, kebutuhan transportasi, dan konsep acara, lalu menyusun simulasi RAB transparan. Hubungi WhatsApp 0813-7370-3639 atau email info@eobatam.web.id untuk mengatur jadwal kunjungan."
 ---
-
-Perusahaan di kawasan industri Mukakuning punya masalah yang jarang dibahas vendor acara. Jumlah karyawan besar, tetapi jadwal kerja tiga shift membuat satu hari libur tidak otomatis berarti semua orang bisa hadir. Batamindo Industrial Park dan Panbil Industrial Estate di Muka Kuning, Kecamatan Sei Beduk, menampung puluhan perusahaan dengan pola kerja yang mirip, sehingga perhitungan family gathering 500 pax di Batam tidak bisa memakai rumus rombongan kantor biasa.
+Perusahaan di kawasan industri Mukakuning punya masalah yang jarang dibahas vendor acara. Jumlah karyawan besar, tetapi jadwal kerja tiga shift membuat satu hari libur tidak otomatis berarti semua orang bisa hadir. Batamindo Industrial Park dan Panbil Industrial Estate di Muka Kuning, Kecamatan Sei Beduk, menampung puluhan perusahaan dengan pola kerja yang mirip, sehingga perhitungan family gathering 500 pax di Batam tidak bisa memakai rumus rombongan kantor biasa. Simulasi ini disusun langsung oleh tim jasa event organizer Batam kami berdasarkan harga vendor aktual tahun berjalan.
 
 Anggaran 500 peserta juga bergerak di angka yang membuat manajemen minta rincian per pos, bukan satu harga borongan. Simulasi berikut disusun untuk kebutuhan itu, memakai rentang biaya resmi layanan gathering kami, ditambah variabel lokal seperti jarak tempuh bus dari gate pabrik dan kuota peserta per shift.
 

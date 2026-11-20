@@ -69,11 +69,11 @@ export const servicesData: ServiceItem[] = [
     title: 'Jasa Corporate Gathering & Family Day Perusahaan di Batam',
     shortTitle: 'Corporate Gathering & Family Day',
     tagline: 'Solusi All-in-One Gathering Tematik Terencana & Terukur',
-    description: 'Penyelenggaraan employee gathering tahunan, perayaan hari jadi korporasi, dan family day dengan manajemen logistik terpadu di resort pesisir Nongsa maupun hotel MICE Batam Center.',
+    description: 'Jasa event organizer Batam untuk employee gathering tahunan, perayaan hari jadi korporasi, dan family day dengan manajemen logistik terpadu di resort pesisir Nongsa maupun hotel MICE Batam Center.',
     image: '/images/pages/layanan-corporate-gathering.webp',
     counter: '01',
     priceRange: 'Mulai Rp350.000 / pax',
-    keywords: ['eo gathering kantor batam', 'corporate gathering batam', 'family day batam', 'company outing batam'],
+    keywords: ['jasa event organizer batam', 'eo gathering kantor batam', 'corporate gathering batam', 'family day batam', 'company outing batam'],
     features: [
       'Penyusunan konsep tematik dan alur rundown terstruktur menit demi menit',
       'Produksi panggung lengkap: sound system line array, lighting show, dan LED videotron',
@@ -91,7 +91,7 @@ export const servicesData: ServiceItem[] = [
     ],
     venues: ['Turi Beach Resort Nongsa', 'Batam View Beach Resort', 'Harris Hotel Batam Center', 'Radisson Golf & Convention'],
     overview: [
-      'Gathering kantor di Kota Batam memiliki dinamika logistik yang unik. Sebagai kawasan kepulauan industri, sebagian besar klien korporasi kami berasal dari zona galangan kapal Batu Ampar, manufaktur Mukakuning, hingga perusahaan multinasional di Batamindo dan Kabil.',
+      'Sebagai jasa event organizer di Batam, EO Batam Production memahami bahwa gathering kantor di Kota Batam memiliki dinamika logistik yang unik. Sebagai kawasan kepulauan industri, sebagian besar klien korporasi kami berasal dari zona galangan kapal Batu Ampar, manufaktur Mukakuning, hingga perusahaan multinasional di Batamindo dan Kabil.',
       'Tantangan utama gathering di Batam adalah pemilihan lokasi yang seimbang antara kemudahan akses rombongan bus besar dan keindahan panorama bahari. EO Batam Production hadir mengatasi seluruh kerumitan teknis: perizinan keramaian kepolisian, sewa genset cadangan luar ruangan, hingga koordinasi F&B bebas antre.'
     ],
     packages: [
@@ -196,11 +196,11 @@ export const servicesData: ServiceItem[] = [
     title: 'Vendor MICE, Seminar Bisnis & Konferensi Korporasi di Batam',
     shortTitle: 'MICE & Seminar Bisnis',
     tagline: 'Presisi Eksekutif untuk Simposium, Raker, dan Konferensi B2B',
-    description: 'Penyelenggaraan perhelatan formal instansi pemerintah dan korporasi multinasional: konferensi internasional, rapat kerja tahunan (Raker), peluncuran produk, expo, dan simposium industri di Kota Batam.',
+    description: 'Jasa event organizer Batam untuk perhelatan formal instansi pemerintah dan korporasi multinasional: konferensi internasional, rapat kerja tahunan (Raker), peluncuran produk, expo, dan simposium industri di Kota Batam.',
     image: '/images/pages/layanan-mice-seminar.webp',
     counter: '02',
     priceRange: 'Custom Proposal (Sesuai Skala)',
-    keywords: ['vendor mice batam', 'eo seminar batam', 'konferensi bisnis batam', 'event corporate batam'],
+    keywords: ['jasa event organizer batam', 'event organizer batam', 'vendor mice batam', 'eo seminar batam', 'konferensi bisnis batam'],
     features: [
       'Sistem registrasi digital peserta berbasis barcode / QR code dengan pencetakan ID card instan',
       'Setup panggung visual eksekutif: LED Screen videotron indoor P2.6 ultra-fine refresh rate',
@@ -218,7 +218,7 @@ export const servicesData: ServiceItem[] = [
     ],
     venues: ['Radisson Golf & Convention Center Batam', 'Harris Hotel Batam Center', 'Swiss-Belhotel Harbour Bay', 'Pacific Palace Hotel'],
     overview: [
-      'Kota Batam menempati posisi strategis sebagai pintu gerbang MICE (Meeting, Incentive, Convention, Exhibition) regional di Selat Malaka. Berdekatan dengan Singapura dan Malaysia, konferensi bisnis di Batam menuntut standar eksekusi bertaraf internasional.',
+      'Sebagai vendor jasa event organizer Batam berpengalaman MICE, EO Batam Production memahami bahwa Kota Batam menempati posisi strategis sebagai pintu gerbang MICE (Meeting, Incentive, Convention, Exhibition) regional di Selat Malaka. Berdekatan dengan Singapura dan Malaysia, konferensi bisnis di Batam menuntut standar eksekusi bertaraf internasional.',
       'EO Batam Production berpengalaman menangani perhelatan formal dengan koordinasi protokoler ketat, visual presentasi tanpa jeda (seamless presentation switching), dan kenyamanan delegasi tingkat tinggi.'
     ],
     packages: [
@@ -317,11 +317,11 @@ export const servicesData: ServiceItem[] = [
     title: 'Paket Outbound Pantai & Team Building Karyawan di Batam',
     shortTitle: 'Outbound & Team Building Pantai',
     tagline: 'Simulasi Dinamis Berbasis Experiential Learning di Alam Terbuka',
-    description: 'Program pengembangan kapasitas kerja sama tim, kepemimpinan, dan komunikasi sinergis karyawan di pantai pasir putih Nongsa dan Barelang Batam dengan instruktur bersertifikasi BNSP.',
+    description: 'Jasa event organizer Batam untuk program pengembangan kapasitas kerja sama tim, kepemimpinan, dan komunikasi sinergis karyawan di pantai pasir putih Nongsa dan Barelang Batam dengan instruktur bersertifikasi BNSP.',
     image: '/images/pages/layanan-outbound-teambuilding.webp',
     counter: '03',
     priceRange: 'Mulai Rp150.000 / pax',
-    keywords: ['paket outbound batam', 'team building batam', 'fun games pantai batam', 'outing karyawan batam'],
+    keywords: ['jasa event organizer batam', 'paket outbound batam', 'team building batam', 'fun games pantai batam', 'outing karyawan batam'],
     features: [
       'Fasilitator game dan instruktur bersertifikasi BNSP dengan rasio ideal 1 fasilitator per 15-20 peserta',
       'Kurikulum simulasi berjenjang: Ice Breaking, Team Identity, Synergy Challenge, dan Final Project',
@@ -340,7 +340,7 @@ export const servicesData: ServiceItem[] = [
     venues: ['Pantai Turi Beach Nongsa', 'Pantai Batam View Resort', 'Pantai Glory Melur Barelang', 'Pantai Elyora Barelang'],
     overview: [
       'Aktivitas luar ruangan di kawasan pesisir Batam menawarkan penyegaran mental dari rutinitas kawasan industri. Namun, menyelenggarakan outbound pantai menuntut pemahaman terhadap siklus pasang surut air laut Batam dan paparan sinar matahari tropis.',
-      'EO Batam Production merancang modul outbound yang energetik, aman, dan sarat nilai perusahaan tanpa unsur perpeloncoan fisik. Setiap permainan dianalisis untuk menghasilkan refleksi kerja sama tim yang aplikatif di tempat kerja.'
+      'Tim jasa event organizer Batam kami merancang modul outbound yang energetik, aman, dan sarat nilai perusahaan tanpa unsur perpeloncoan fisik. Setiap permainan dianalisis untuk menghasilkan refleksi kerja sama tim yang aplikatif di tempat kerja.'
     ],
     packages: [
       {
@@ -438,11 +438,11 @@ export const servicesData: ServiceItem[] = [
     title: 'Jasa Gala Dinner & Corporate Awarding Night di Batam',
     shortTitle: 'Gala Dinner & Awarding Night',
     tagline: 'Malam Apresiasi Megah dengan Tata Cahaya Spektakuler & Audio Kelas Atas',
-    description: 'Produksi perhelatan malam puncak apresiasi karyawan, perayaan hari jadi korporasi, dan jamuan makan malam kehormatan dengan tata panggung megah, lighting show bergerak, dan pengisi acara berkelas di Batam.',
+    description: 'Jasa event organizer Batam untuk perhelatan malam puncak apresiasi karyawan, perayaan hari jadi korporasi, dan jamuan makan malam kehormatan dengan tata panggung megah, lighting show bergerak, dan pengisi acara berkelas di Batam.',
     image: '/images/pages/layanan-gala-dinner.webp',
     counter: '04',
     priceRange: 'Custom Proposal (Sesuai Skala Acara)',
-    keywords: ['eo gala dinner batam', 'awarding night batam', 'malam keakraban kantor batam', 'annual dinner batam'],
+    keywords: ['jasa event organizer batam', 'event organizer batam', 'eo gala dinner batam', 'awarding night batam', 'annual dinner batam'],
     features: [
       'Desain panggung 3D tematik kustom (Gatsby, Futuristic, Nusantara Heritage, Hollywood Glamour)',
       'Tata cahaya spektakuler: Moving Beam 380W, Par LED RGBW, Laser Show, Hazer Smoke Machine',
@@ -461,7 +461,7 @@ export const servicesData: ServiceItem[] = [
     venues: ['Ballroom Radisson Batam Center', 'Ballroom Swiss-Belhotel Harbour Bay', 'Turi Beach Outdoor Amphitheatre', 'Batam View Coastal Deck'],
     overview: [
       'Gala Dinner dan Malam Penganugerahan (Awarding Night) adalah cerminan prestise sebuah korporasi. Event malam hari menuntut eksekusi estetika visual tinggi: pencahayaan yang dramatis, ketepatan waktu transisi antar-sesi, dan tata suara musik yang jernih namun tetap nyaman untuk bercengkerama.',
-      'EO Batam Production mengelola seluruh elemen pertunjukan, mulai dari gladi resik penerima trofi, alur kue ulang tahun perusahaan, video bumper visual di layar LED, hingga koordinasi katering bintang lima.'
+      'Sebagai jasa event organizer Batam spesialis perhelatan malam, EO Batam Production mengelola seluruh elemen pertunjukan, mulai dari gladi resik penerima trofi, alur kue ulang tahun perusahaan, video bumper visual di layar LED, hingga koordinasi katering bintang lima.'
     ],
     packages: [
       {

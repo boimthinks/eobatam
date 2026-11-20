@@ -4,13 +4,12 @@ description: "Beda pixel pitch P2.6 dan P3.9, kebutuhan brightness nits, daya li
 publishDate: "2026-11-18"
 author: "Muhammad Zazuli"
 category: "Tips Event"
-tags: ["led videotron batam", "sewa led screen event batam", "led p2.6 indoor", "led p3.9 outdoor", "gala dinner batam"]
+tags: ["led videotron batam", "sewa led screen event batam", "led p2.6 indoor", "led p3.9 outdoor", "gala dinner batam", "event organizer batam"]
 image: "/images/blog/spesifikasi-led-videotron-event-batam.webp"
 schemaType: "Article"
 draft: false
 ---
-
-Panitia yang memesan LED videotron untuk acara perusahaan di Batam hampir selalu bertanya hal yang sama: layar mana yang tepat, P2.6 atau P3.9? Jawaban praktisnya, P2.6 untuk ruangan indoor seperti ballroom hotel dan P3.9 untuk panggung outdoor seperti area pantai Barelang atau halaman kawasan industri. Angka di belakang huruf P itu adalah jarak antar piksel dalam milimeter, dan angka itulah yang menentukan seberapa jauh penonton boleh berdiri tanpa melihat titik-titik lampu di layar.
+Panitia yang memesan LED videotron untuk acara perusahaan di Batam hampir selalu bertanya hal yang sama: layar mana yang tepat, P2.6 atau P3.9? Jawaban praktisnya, P2.6 untuk ruangan indoor seperti ballroom hotel dan P3.9 untuk panggung outdoor seperti area pantai Barelang atau halaman kawasan industri. Angka di belakang huruf P itu adalah jarak antar piksel dalam milimeter, dan angka itulah yang menentukan seberapa jauh penonton boleh berdiri tanpa melihat titik-titik lampu di layar. Spesifikasi berikut merangkum standar yang dipakai tim jasa event organizer Batam kami saat menentukan layar untuk tiap venue.
 
 Artikel ini membedah perbedaan teknis keduanya dari sisi lapangan: jarak pandang minimal, kecerahan, kebutuhan daya, hingga konsekuensi biaya. Semuanya dikaitkan dengan tipe venue yang biasa kita kerjakan di Batam, dari ballroom Harbour Bay sampai tepi laut Nongsa.
 
