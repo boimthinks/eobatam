@@ -30,6 +30,8 @@ Konsekuensinya sederhana. Ballroom hotel dengan meja VIP yang diletakkan tiga me
 | Kecerahan tipikal | 600 sampai 1.200 nits | 4.500 sampai 5.500 nits |
 | Ketahanan | tidak tahan hujan, tanpa IP rating outdoor | tahan hujan gerimis, sambungan panel kedap |
 | Struktur | wall mount atau rigging truss ringan | ground support atau rigging dengan ballast angin |
+
+Perlu dicatat, struktur rigging outdoor di pesisir memiliki standar keselamatan tersendiri — baca SOP [mitigasi cuaca dan panggung rigging pantai](/blog/mitigasi-cuaca-panggung-rigging-pantai-batam/) sebelum memutuskan spesifikasi layar untuk acara tepi laut.
 | Kebutuhan daya kasar | 250 sampai 350 watt per m2 | 550 sampai 700 watt per m2 |
 | Kegunaan umum | gala dinner, awarding, seminar, town hall | gathering pantai, groundbreaking, konser karyawan |
 

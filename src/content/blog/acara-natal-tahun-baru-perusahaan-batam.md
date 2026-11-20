@@ -31,7 +31,7 @@ Berdasarkan pengalaman menangani puluhan corporate night di Batam, berikut timel
 |---|---|---|
 | Agustus–September | Finalisasi konsep, tanggal, dan estimasi anggaran | Kunci tanggal internal dulu; hindari bentrok dengan shutdown pabrik atau audit tutup buku |
 | September–Oktober | Booking venue dan kontrak EO | Venue adalah prioritas nomor satu; EO bisa membantu survei dan negosiasi harga korporasi |
-| Oktober | Pengurusan izin keramaian (jika menggunakan area publik) | Polresta Barelang minta pengajuan minimal 14 hari kerja sebelum acara |
+| Oktober | Pengurusan izin keramaian (jika menggunakan area publik) | Polresta Barelang minta pengajuan minimal 14 hari kerja sebelum acara — detail alurnya ada di [panduan izin keramaian dan pajak hiburan event Batam](/blog/izin-keramaian-polresta-barelang-pajak-bprd-batam/) |
 | Oktober–November | Kontrak katering, dekorasi, talent, dan dokumentasi | Pada musim puncak, talent dan kru produksi lebih cepat penuh daripada venue |
 | November | Gladi resik, desain panggung, finalisasi rundown | Minta rundown final tertulis agar seluruh vendor bekerja dari satu acuan |
 | Awal Desember | Final check teknis, konsumsi, transportasi karyawan | Cek protokol kesehatan/kantor dan rencana cadangan cuaca untuk acara outdoor |
@@ -46,7 +46,7 @@ Pilihan konsep sebaiknya disesuaikan dengan skala perusahaan dan pesan yang ingi
 Menggabungkan perayaan natal dan syukuran tahun baru dalam satu rangkaian menonjolkan nilai kebersamaan lintas latar belakang karyawan. Umumnya dipadukan dengan makan malam prasmanan dan pengumuman penghargaan karyawan terbaik tahun berjalan.
 
 ### 2. Corporate Gala Night Bertema Akhir Tahun (Perusahaan Menengah)
-Format gala dinner dengan dress code bertema, dekorasi musim dingin/natal modern, live band, dan sesi doorprize besar. Cocok untuk perusahaan yang ingin menonjolkan apresiasi sekaligus citra profesional di hadapan tamu manajemen regional dari Singapura.
+Format gala dinner dengan dress code bertema, dekorasi musim dingin/natal modern, live band, dan sesi doorprize besar. Cocok untuk perusahaan yang ingin menonjolkan apresiasi sekaligus citra profesional di hadapan tamu manajemen regional dari Singapura. Susunan acaranya dapat mengikuti [template rundown gala dinner perusahaan](/blog/rundown-gala-dinner-perusahaan-batam/) berikut.
 
 ### 3. Family Year-End Gathering (Perusahaan dengan Banyak Karyawan Berkeluarga)
 Menggabungkan family day mini dengan perayaan natal: pengisi acara ramah anak (magic show, mascot), booth foto bertema, dan distribusi hadiah anak karyawan. Venue resort atau area outdoor yang luas lebih sesuai untuk format ini.

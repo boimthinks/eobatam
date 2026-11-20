@@ -54,7 +54,7 @@ Pantai legendaris di kawasan Barelang yang telah dilengkapi dengan fasilitas pen
 Sebelum menentukan lokasi, pastikan panitia memeriksa faktor-faktor teknis berikut:
 1. **Jadwal Pasang Surut Air Laut:** Permainan pantai membutuhkan area pasir kering yang cukup. Jadwal pasang air laut harus disinkronkan dengan rundown acara.
 2. **Rencana Cadangan (Contingency Plan):** Pesisir tropis Batam rentan hujan mendadak. Pastikan lokasi memiliki aula indoor atau tenda cadangan yang siap digunakan.
-3. **Ketersediaan Fasilitator Tersertifikasi:** Game outbound bukan sekadar bermain tawa; ada pesan pembentukan kepemimpinan dan komunikasi tim yang harus dibawakan oleh master game berpengalaman.
+3. **Ketersediaan Fasilitator Tersertifikasi:** Game outbound bukan sekadar bermain tawa; ada pesan pembentukan kepemimpinan dan komunikasi tim yang harus dibawakan oleh master game berpengalaman. Pastikan kualitasnya dengan membaca kriteria [memilih master game dan fasilitator outbound](/blog/tips-memilih-fasilitator-outbound-batam/) berikut.
 
 ## Rancang Paket Outbound Kantor Anda Bersama Kami
 

@@ -33,7 +33,7 @@ Tingkatan perizinan terbagi berdasarkan jumlah peserta dan potensi kerawanan:
 
 ## 2. Pemahaman Pajak Hiburan (PBJT) BPRD Kota Batam
 
-Untuk event perusahaan yang menyertakan hiburan musik band, pertunjukan seni profesional, atau penjualan tiket masuk, penyelenggara perlu memahami ketentuan Pajak Barang dan Jasa Tertentu (PBJT) atas Jasa Kesenian dan Hiburan yang diatur dalam Peraturan Daerah Kota Batam.
+Untuk event perusahaan yang menyertakan hiburan musik band, pertunjukan seni profesional, atau penjualan tiket masuk, penyelenggara perlu memahami ketentuan Pajak Barang dan Jasa Tertentu (PBJT) atas Jasa Kesenian dan Hiburan yang diatur dalam Peraturan Daerah Kota Batam. Pajak ini juga relevan apabila acara Anda menyewa perlengkapan produksi seperti [LED videotron](/blog/spesifikasi-led-videotron-event-batam/) dari vendor eksternal.
 
 Jika acara merupakan gathering internal murni tanpa pungutan tiket kepada peserta, umumnya dikenakan pelaporan non-komersial. Namun, jika ada unsur pertunjukan terbuka atau sponsor komersial pihak ketiga, pendaftaran surat tanda pemberitahuan ke BPRD Batam wajib dilampirkan agar terhindar dari sanksi administratif atau penyegelan panggung di lokasi.
 

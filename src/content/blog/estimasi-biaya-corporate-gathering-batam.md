@@ -34,6 +34,8 @@ Berikut adalah acuan simulasi biaya riil di Batam untuk kapasitas rombongan 50 h
 
 *Catatan: Estimasi di atas merupakan gambaran acuan umum. Biaya final ditentukan oleh tanggal pelaksanaan (weekday vs weekend) dan spesifikasi talent hiburan.*
 
+Jika acara yang direncanakan mencakup konferensi atau seminar formal, simulasi biaya di atas perlu disesuaikan — baca panduan [konferensi dan seminar bisnis internasional di Batam](/blog/panduan-konferensi-seminar-internasional-batam/) untuk rincian pos anggaran MICE. Untuk kebutuhan panggung hiburan malam, [rundown gala dinner perusahaan](/blog/rundown-gala-dinner-perusahaan-batam/) berikut juga dapat dijadikan acuan alokasi waktunya.
+
 ## Tips Efisiensi Anggaran Tanpa Menurunkan Kualitas Acara
 
 ### 1. Manfaatkan Konsultasi dan Survey Lokasi Lebih Awal
