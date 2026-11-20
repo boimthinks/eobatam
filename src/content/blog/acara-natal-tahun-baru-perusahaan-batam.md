@@ -8,6 +8,15 @@ tags: ["event natal perusahaan batam", "acara tahun baru kantor batam", "event o
 image: "/images/blog/acara-natal-tahun-baru-perusahaan-batam_poco.webp"
 schemaType: "Article"
 draft: false
+faq:
+  - q: "Kapan sebaiknya perusahaan di Batam mulai merencanakan acara natal dan tahun baru?"
+    a: "Idealnya mulai Agustus hingga September. Venue ballroom hotel di Batam Center dan Harbour Bay untuk tanggal Desember umumnya sudah dipesen sejak September–Oktober, dan harga vendor musim puncak naik 20–40% dibanding bulan biasa."
+  - q: "Berapa biaya acara natal/tahun baru perusahaan di Batam per orang?"
+    a: "Kisaran wajar Rp450.000–Rp750.000 per orang untuk format gala night ballroom hotel, dan Rp350.000–Rp500.000 per orang untuk format resort dengan skala besar. Angka final tergantung venue, jumlah peserta, dan skala produksi panggung."
+  - q: "Apakah acara natal perusahaan di Batam perlu izin keramaian?"
+    a: "Jika digelar di dalam ballroom hotel atau area privat resort, umumnya tidak memerlukan izin keramaian kepolisian. Izin keramaian Polresta Barelang diperlukan bila acara menggunakan area publik atau fasilitas umum terbuka."
+  - q: "Bisakah acara natal dan tahun baru digabung dalam satu acara?"
+    a: "Bisa dan justru lazim di Batam. Format gabungan menghemat anggaran venue dan produksi, biasanya dengan sesi pelayanan/perayaan natal di awal, dilanjutkan makan malam, penghargaan karyawan, dan countdown tahun baru di akhir."
 ---
 Akhir tahun adalah periode tersibukkan sekaligus paling rawan bagi panitia internal perusahaan di Batam. Acara natal dan tahun baru perusahaan memiliki tantangan yang berbeda dari gathering biasa: venue ballroom dan resort diperebutkan berbulan-bulan sebelumnya, harga vendor naik signifikan, dan jadwal EO serta talent hiburan cepat penuh. Tim jasa event organizer Batam kami biasanya sudah menerima pemesanan acara Desember sejak bulan September.
 
@@ -74,17 +83,6 @@ Sebagai patokan kasar, paket corporate night akhir tahun di Batam umumnya berkis
 3. **Mengabaikan cuaca untuk acara outdoor.** Meski akhir tahun cenderung cerah, Desember adalah awal musim hujan. Panggung outdoor wajib punya rencana cadangan indoor atau tenda sarnafil berstandar rigging aman.
 4. **Underestimasi jumlah tamu.** Musim akhir tahun sering dipakai untuk mengundang keluarga karyawan atau mitra bisnis. Kunci jumlah final minimal 10 hari sebelum acara untuk menghindari kekurangan konsumsi.
 5. **Menumpukan acara dengan jadwal produksi pabrik.** Perusahaan manufaktur di Batam harus menghindari bentrok dengan shutdown maintenance tahunan dan periode lembur penyelesaian target.
-
-## FAQ
-
-- q: "Kapan sebaiknya perusahaan di Batam mulai merencanakan acara natal dan tahun baru?"
-  a: "Idealnya mulai Agustus hingga September. Venue ballroom hotel di Batam Center dan Harbour Bay untuk tanggal Desember umumnya sudah dipesen sejak September–Oktober, dan harga vendor musim puncak naik 20–40% dibanding bulan biasa."
-- q: "Berapa biaya acara natal/tahun baru perusahaan di Batam per orang?"
-  a: "Kisaran wajar Rp450.000–Rp750.000 per orang untuk format gala night ballroom hotel, dan Rp350.000–Rp500.000 per orang untuk format resort dengan skala besar. Angka final tergantung venue, jumlah peserta, dan skala produksi panggung."
-- q: "Apakah acara natal perusahaan di Batam perlu izin keramaian?"
-  a: "Jika digelar di dalam ballroom hotel atau area privat resort, umumnya tidak memerlukan izin keramaian kepolisian. Izin keramaian Polresta Barelang diperlukan bila acara menggunakan area publik atau fasilitas umum terbuka."
-- q: "Bisakah acara natal dan tahun baru digabung dalam satu acara?"
-  a: "Bisa dan justru lazim di Batam. Format gabungan menghemat anggaran venue dan produksi, biasanya dengan sesi pelayanan/perayaan natal di awal, dilanjutkan makan malam, penghargaan karyawan, dan countdown tahun baru di akhir."
 
 ## Kesimpulan
 
