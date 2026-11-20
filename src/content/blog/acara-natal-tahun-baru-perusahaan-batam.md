@@ -1,7 +1,7 @@
 ---
 title: "Event Organizer untuk Acara Natal & Tahun Baru Perusahaan di Batam: Panduan Perencanaan Akhir Tahun"
 description: "Panduan menyelenggarakan acara natal dan tahun baru perusahaan di Batam: timeline pemesanan venue, ide konsep, simulasi anggaran, dan tips menghindari keterisian venue akhir tahun."
-publishDate: "2026-11-05"
+publishDate: "2026-11-20"
 author: "Muhammad Zazuli"
 category: "Tips Event"
 tags: ["event natal perusahaan batam", "acara tahun baru kantor batam", "event organizer batam", "gathering akhir tahun batam", "event desember batam"]
