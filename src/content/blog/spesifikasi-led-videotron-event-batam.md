@@ -94,7 +94,7 @@ Tidak disarankan. Panel indoor tidak punya proteksi cuaca dan kecerahannya kalah
 Panel P2.6 seluas 12 m2 menarik sekitar 3 sampai 4 kVA saat konten penuh. Ballroom hotel biasanya mencukupi, sedangkan venue pantai mengandalkan genset silent yang kapasitasnya harus dihitung bersama kebutuhan sound dan lighting.
 
 **Berapa jarak minimal duduk dari layar LED?**
-Kira-kira pitch dikali 1.000 dalam meter. Layar P2.6 nyaman dari 2,6 meter, layar P3.9 dari sekitar 4 meter. Tamu yang lebih dekat dari itu akan melihat titik-titik lampu panel.
+Kira-kira pitch dikali 1.000 dalam meter. Layar P2.6 nyaman dari 2,6 meter, layar P3.9 dari sekitar 4 meter. Tamu yang lebih dekat dari itu akan melihat titik-titik lampu panel. Kalau panitia membutuhkan pendampingan dari survei sampai instalasi, tim [event organizer batam](/) kami bisa mengambil alih seluruh bagian teknisnya.
 
 **Apakah sewa LED bisa diambil tanpa paket event?**
 Layanan kami menyajikan LED videotron sebagai bagian produksi terintegrasi di dalam paket event, bukan sewa alat lepas. Alatnya dikelola bersama panggung, sound, dan pencahayaan oleh satu tim produksi.

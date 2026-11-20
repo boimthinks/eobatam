@@ -111,6 +111,6 @@ Dua proposal yang lolos semua poin di atas biasanya baru bisa dibandingkan secar
 
 Keputusan akhir tetap bergantung pada kecocokan antara tim fasilitator dan peserta Anda. Rombongan operator produksi dengan usia majemuk membutuhkan pendekatan berbeda dari rombongan staf kantor yang terbiasa bekerja dalam proyek. Fasilitator yang baik menyesuaikan bahasa instruksi, tempo, dan tingkat kesulitan permainan.
 
-EO Batam Production siap memetakan komposisi peserta, jadwal shift, karakter venue, dan target acara bersama panitia. Tim konsultan datang langsung ke kantor perusahaan di Batam untuk presentasi konsep, survei lokasi, dan penyusunan RAB transparan, tanpa biaya survei awal.
+EO Batam Production siap memetakan komposisi peserta, jadwal shift, karakter venue, dan target acara bersama panitia. Fasilitator kami berasal dari jaringan vendor yang kami uji langsung sebagai [eo batam](/) pada setiap program outbound. Tim konsultan datang langsung ke kantor perusahaan di Batam untuk presentasi konsep, survei lokasi, dan penyusunan RAB transparan, tanpa biaya survei awal.
 
 Kirim jumlah peserta dan target kegiatan melalui WhatsApp **0813-7370-3639** atau email **info@eobatam.web.id**. Sertakan juga tanggal rencana acara agar tim dapat memeriksa ketersediaan fasilitator pada tanggal tersebut.

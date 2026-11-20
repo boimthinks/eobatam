@@ -49,6 +49,6 @@ Acara outdoor di pesisir Batam memerlukan mitigasi angin laut dan pasang surut a
 
 ## Konsultasi Anggaran Langsung ke Kantor Anda
 
-EO Batam Production menyediakan layanan konsultasi gratis dan survey lokasi untuk perusahaan Anda di seluruh wilayah Batam. Tim kami siap berkunjung langsung ke kantor Anda untuk membedah konsep, menyusun simulasi RAB transparan, dan menyesuaikan kebutuhan event dengan anggaran yang tersedia.
+EO Batam Production menyediakan layanan konsultasi gratis dan survey lokasi untuk perusahaan Anda di seluruh wilayah Batam. Sebagai [jasa event organizer Batam](/) all-in-one, tim kami siap berkunjung langsung ke kantor Anda untuk membedah konsep, menyusun simulasi RAB transparan, dan menyesuaikan kebutuhan event dengan anggaran yang tersedia.
 
 Hubungi tim kami melalui WhatsApp di **0813-7370-3639** atau email ke **info@eobatam.web.id**.

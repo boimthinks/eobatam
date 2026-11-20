@@ -29,6 +29,7 @@ Dokumen ini adalah instruksi operasional untuk AI Agent yang bekerja di reposito
 - **Rencana Konten 30 Hari:** Jadwal antrean produksi artikel terdata di **`RENCANA-KONTEN-AI-30-HARI.md`**.
 - **Pemicu Rutin Harian:** Setiap instruksi pengguna bernada "buat artikel apa hari ini", "artikel hari ini", atau sejenisnya **wajib** dimulai dengan membaca `RENCANA-KONTEN-AI-30-HARI.md`, memilih nomor antrean pertama yang statusnya belum **TERBIT**, lalu mengeksekusi alur `/daily` penuh tanpa perlu bertanya topik lagi.
 - **Registri Internal Linking:** Gunakan pemetaan di `src/utils/internalLinks.ts` untuk menghubungkan spoke article ke service silos dan beranda.
+- **Aturan Wajib Link Homepage:** Setiap artikel blog **wajib** memuat **minimal 1 internal link menuju homepage (`/`)**. Pilih **satu saja** dari anchor keyword berikut (jangan digabung, jangan divariasikan dalam satu artikel): `eo batam`, `event organizer batam`, atau `jasa event organizer batam`. Letakkan secara natural di paragraf pembuka, penutup, atau bagian yang relevan secara konteks.
 
 ### Standar Produksi Gambar Artikel (Visual Assets)
 

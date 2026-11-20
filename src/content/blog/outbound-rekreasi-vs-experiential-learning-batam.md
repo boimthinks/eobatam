@@ -103,6 +103,6 @@ Sebelum tanda tangan, minta vendor menjawab poin berikut secara tertulis. Jawaba
 
 Keputusan tidak perlu rumit. Apresiasi tahunan dan family day berjalan baik dengan outbound rekreasi. Target perbaikan koordinasi, supervisor baru, atau handover antar-shift membutuhkan experiential learning dengan debriefing yang benar-benar dipakai.
 
-EO Batam Production siap memetakan komposisi peserta, jadwal shift, dan karakter venue bersama panitia. Tim konsultan kami datang langsung ke kantor atau area pabrik di Batam untuk presentasi konsep, survei lokasi, dan penyusunan RAB transparan tanpa biaya survei awal.
+EO Batam Production siap memetakan komposisi peserta, jadwal shift, dan karakter venue bersama panitia. Pendekatan ini kami kembangkan dari pengalaman sebagai [jasa event organizer batam](/) yang menangani klien manufaktur di kawasan industri Batam. Tim konsultan kami datang langsung ke kantor atau area pabrik di Batam untuk presentasi konsep, survei lokasi, dan penyusunan RAB transparan tanpa biaya survei awal.
 
 Kirim jumlah peserta dan target kegiatan melalui WhatsApp **0813-7370-3639** atau email **info@eobatam.web.id**.

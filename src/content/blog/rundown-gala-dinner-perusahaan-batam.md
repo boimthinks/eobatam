@@ -77,6 +77,6 @@ Untuk memastikan rundown berjalan tepat menit demi menit, panitia inti bersama t
 
 ## Konsultasi Perancangan Rundown Langsung ke Kantor Anda
 
-EO Batam Production siap mendampingi perusahaan Anda merancang konsep tema, susunan acara, tata panggung 3D, hingga estimasi anggaran transparan. Tim konsultan kami siap hadir langsung ke kantor Anda di seluruh wilayah Batam untuk presentasi konsep tanpa biaya survei awal.
+EO Batam Production siap mendampingi perusahaan Anda merancang konsep tema, susunan acara, tata panggung 3D, hingga estimasi anggaran transparan. Sebagai [event organizer batam](/) spesialis gala dinner, tim konsultan kami siap hadir langsung ke kantor Anda di seluruh wilayah Batam untuk presentasi konsep tanpa biaya survei awal.
 
 Hubungi tim kami melalui WhatsApp di **0813-7370-3639** atau kirimkan rencana kegiatan Anda ke **info@eobatam.web.id**.

@@ -47,6 +47,6 @@ Jika acara merupakan gathering internal murni tanpa pungutan tiket kepada pesert
 
 Mengurus perizinan birokrasi di sela kesibukan pekerjaan harian kantor sering kali menjadi beban berat bagi tim HR atau GA. 
 
-Dalam paket kerjasama all-in bersama **EO Batam Production**, seluruh jalur birokrasi, penyusunan proposal teknis untuk Satintelkam Polresta Barelang, surat rekomendasi Polsek setempat, hingga koordinasi kepatuhan pajak daerah telah ditangani langsung oleh tim perizinan kami.
+Dalam paket kerjasama all-in bersama **EO Batam Production**, seluruh jalur birokrasi, penyusunan proposal teknis untuk Satintelkam Polresta Barelang, surat rekomendasi Polsek setempat, hingga koordinasi kepatuhan pajak daerah telah ditangani langsung oleh tim perizinan kami. Ini adalah standar kerja yang kami jalankan sebagai [event organizer batam](/) yang menangani perizinan setiap bulan.
 
 Diskusikan rencana event kantor Anda bersama konsultan kami. Tim kami siap hadir langsung ke kantor Anda di Batam untuk konsultasi tatap muka. Hubungi kami via WhatsApp di **0813-7370-3639**.

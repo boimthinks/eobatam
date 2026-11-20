@@ -58,6 +58,6 @@ Sebelum menentukan lokasi, pastikan panitia memeriksa faktor-faktor teknis berik
 
 ## Rancang Paket Outbound Kantor Anda Bersama Kami
 
-**EO Batam Production** siap membantu perusahaan Anda menyusun program outbound terstruktur mulai dari penentuan venue, penyediaan master game, instruktur, perlengkapan permainan, hingga katering prasmanan.
+**EO Batam Production** siap membantu perusahaan Anda menyusun program outbound terstruktur mulai dari penentuan venue, penyediaan master game, instruktur, perlengkapan permainan, hingga katering prasmanan. Rangkaiannya kami kelola sebagai [jasa event organizer batam](/) dalam satu pintu.
 
 Kami melayani survey lokasi gratis dan siap datang langsung ke kantor Anda di Batam untuk mempresentasikan konsep kegiatan. Hubungi tim kami via WhatsApp di **0813-7370-3639**.

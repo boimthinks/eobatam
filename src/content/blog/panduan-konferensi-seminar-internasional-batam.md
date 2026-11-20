@@ -118,6 +118,6 @@ Minta jawaban tertulis sebelum tanda tangan kontrak.
 
 Perbedaan EO yang baik dan vendor biasa terlihat pada tahap proposal. Vendor biasa mengirim template harga ballroom. EO yang menangani MICE datang ke venue, mengukur karakter ruangan, menguji jalur teknis, lalu menyusun proposal yang menunjukkan asumsi di balik angkanya.
 
-Tim konsultan kami siap datang langsung ke kantor klien atau venue di Batam Center untuk memetakan kebutuhan, menguji lini sound, dan menyusun proposal MICE dengan rincian komponen yang dapat ditelusuri. Survei lokasi dan konsultasi awal tidak dipungut biaya.
+Tim konsultan kami siap datang langsung ke kantor klien atau venue di Batam Center untuk memetakan kebutuhan, menguji lini sound, dan menyusun proposal MICE dengan rincian komponen yang dapat ditelusuri. Sebagai [event organizer batam](/) yang fokus pada segmen MICE korporat, survei lokasi dan konsultasi awal kami tidak dipungut biaya.
 
 Kirim estimasi jumlah peserta, daftar bahasa yang dibutuhkan, dan tanggal acara melalui WhatsApp **0813-7370-3639** atau email **info@eobatam.web.id**.

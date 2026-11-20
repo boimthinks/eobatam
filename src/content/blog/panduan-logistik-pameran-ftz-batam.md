@@ -169,6 +169,6 @@ Ajukan pertanyaan ini sebelum kontrak ditandatangani.
 
 Urutan kerja yang menyelamatkan anggaran dimulai dari daftar barang, bukan dari membandingkan tarif kirim. Setelah komponen dipisahkan antara yang dibuat lokal dan yang dikirim, barulah moda, dokumen, dan jadwal ditentukan. Panitia yang melakukannya cenderung membayar lebih sedikit dan tidur lebih tenang menjelang hari acara.
 
-Tim konsultan kami siap datang langsung ke kantor klien di Batam untuk membedah daftar kebutuhan pameran, menyusun alur pengiriman, dan menghitung komponen biaya secara transparan. Survei venue dan konsultasi awal tidak dipungut biaya.
+Tim konsultan kami siap datang langsung ke kantor klien di Batam untuk membedah daftar kebutuhan pameran, menyusun alur pengiriman, dan menghitung komponen biaya secara transparan. Pengalaman logistik ini kami kumpulkan dari tahun-tahun menangani MICE dan pameran sebagai [eo batam](/). Survei venue dan konsultasi awal tidak dipungut biaya.
 
 Kirimkan denah booth, jumlah krat rencana, dan tanggal acara melalui WhatsApp **0813-7370-3639** atau email **info@eobatam.web.id**.

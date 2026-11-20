@@ -107,6 +107,6 @@ Dua jam sebelum acara dimulai dan sebelum tamu pertama tiba di lokasi pantai, pi
 
 Merancang panggung luar ruangan di pantai Batam membutuhkan jam terbang, pemahaman karakteristik pasang surut laut, serta peralatan rigging bersertifikasi resmi. Panitia kantor Anda tidak perlu dipusingkan dengan urusan teknis beban angin, genset, dan risiko cuaca pesisir.
 
-EO Batam Production siap mengambil alih seluruh tanggung jawab manajemen panggung, tata suara, tata cahaya, hingga mitigasi keselamatan lapangan. Tim konsultan kami siap berkunjung langsung ke kantor perusahaan Anda di wilayah Batam untuk presentasi konsep panggung 3D dan simulasi anggaran yang transparan tanpa biaya survei awal.
+EO Batam Production siap mengambil alih seluruh tanggung jawab manajemen panggung, tata suara, tata cahaya, hingga mitigasi keselamatan lapangan. Pengalaman ini dibangun dari praktik lapangan kami sebagai [eo batam](/) yang rutin menangani produksi panggung pesisir. Tim konsultan kami siap berkunjung langsung ke kantor perusahaan Anda di wilayah Batam untuk presentasi konsep panggung 3D dan simulasi anggaran yang transparan tanpa biaya survei awal.
 
 Konsultasikan rencana kegiatan gathering dan panggung outdoor Anda bersama tim kami melalui WhatsApp di **0813-7370-3639** atau kirimkan rancangan kebutuhan acara Anda ke email **info@eobatam.web.id**.
