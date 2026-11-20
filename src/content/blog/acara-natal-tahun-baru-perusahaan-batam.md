@@ -5,7 +5,7 @@ publishDate: "2026-11-20"
 author: "Muhammad Zazuli"
 category: "Tips Event"
 tags: ["event natal perusahaan batam", "acara tahun baru kantor batam", "event organizer batam", "gathering akhir tahun batam", "event desember batam"]
-image: "/images/blog/event-natal-tahun-baru-perusahaan-batam.webp"
+image: "/images/blog/acara-natal-tahun-baru-perusahaan-batam_poco.webp"
 schemaType: "Article"
 draft: false
 ---
