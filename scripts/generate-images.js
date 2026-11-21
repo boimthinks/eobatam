@@ -341,6 +341,20 @@ async function buildImages() {
       title: 'Kriteria Memilih Fasilitator Outbound Batam',
       subtitle: 'Rasio fasilitator 1:15, uji skenario master game, dan mitigasi pasang surut pantai',
       iconType: 'outbound'
+    },
+    {
+      file: 'ide-tema-corporate-gathering-batam.webp',
+      category: 'Corporate Gathering',
+      title: 'Ide Tema Corporate Gathering Batam',
+      subtitle: 'Konsep tema karyawan manufaktur & galangan kapal, safety day, shift party, hingga gala Batam',
+      iconType: 'gathering'
+    },
+    {
+      file: 'spesifikasi-led-videotron-event-batam.webp',
+      category: 'Tips Event',
+      title: 'Spesifikasi LED Videotron Event Batam',
+      subtitle: 'Perbandingan LED indoor P2.6 dan outdoor P3.9, resolusi piksel, dan kebutuhan daya',
+      iconType: 'event'
     }
   ];
 

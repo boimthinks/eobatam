@@ -34,7 +34,7 @@ Dokumen ini adalah kalender editorial strategis 30 hari untuk produksi konten bl
 | **10** | Simulasi RAB Family Gathering Karyawan 500 Pax di Kawasan Industri Mukakuning Batam | `simulasi-rab-family-gathering-500-pax-batam` | Gathering | `/layanan/corporate-gathering-batam/` | **TERBIT** |
 | **11** | Kriteria Memilih Master Game dan Fasilitator Outbound Batam | `tips-memilih-fasilitator-outbound-batam` | Outbound | `/layanan/outbound-team-building-batam/` | **TERBIT** |
 | **12** | Spesifikasi LED Videotron Indoor P2.6 vs Outdoor P3.9 untuk Event Perusahaan di Batam | `spesifikasi-led-videotron-event-batam` | Tips Event | `/layanan/gala-dinner-awarding-batam/` | **TERBIT** |
-| **13** | 5 Konsep Tema Gathering Unik untuk Perusahaan Manufaktur dan Galangan Kapal di Batam | `ide-tema-corporate-gathering-batam` | Gathering | `/layanan/corporate-gathering-batam/` | Siap Tulis |
+| **13** | 5 Konsep Tema Gathering Unik untuk Perusahaan Manufaktur dan Galangan Kapal di Batam | `ide-tema-corporate-gathering-batam` | Gathering | `/layanan/corporate-gathering-batam/` | **TERBIT** |
 | **14** | Rekomendasi Ballroom Hotel di Batam Center dan Harbour Bay untuk Rapat Kerja Nasional | `rekomendasi-ballroom-hotel-batam-center-harbour-bay` | Venue | `/layanan/mice-event-organizer-batam/` | Siap Tulis |
 | **15** | Perhitungan Daya Genset Silent dan Tata Kelola Listrik Aman untuk Panggung Outdoor Batam | `perhitungan-daya-genset-silent-event-batam` | Tips Event | `/layanan/corporate-gathering-batam/` | Siap Tulis |
 | **16** | Panduan Menyelenggarakan Upacara Groundbreaking Pabrik Baru di Kawasan Industri Batam | `panduan-groundbreaking-peresmian-pabrik-batam` | MICE | `/layanan/mice-event-organizer-batam/` | Siap Tulis |

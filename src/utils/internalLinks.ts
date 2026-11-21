@@ -149,4 +149,10 @@ export const INTERNAL_LINKS: InternalLinkItem[] = [
     category: 'blog',
     keywords: ['led videotron batam', 'sewa led screen event batam', 'led p2.6 indoor', 'led p3.9 outdoor', 'spesifikasi led videotron event'],
   },
+  {
+    title: '5 Konsep Tema Gathering Unik untuk Perusahaan Manufaktur dan Galangan Kapal di Batam',
+    url: '/blog/ide-tema-corporate-gathering-batam/',
+    category: 'blog',
+    keywords: ['ide tema corporate gathering batam', 'tema gathering karyawan pabrik', 'tema gathering galangan kapal batam', 'konsep tema family day batam'],
+  },
 ];
