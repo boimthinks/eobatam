@@ -150,6 +150,12 @@ export const INTERNAL_LINKS: InternalLinkItem[] = [
     keywords: ['led videotron batam', 'sewa led screen event batam', 'led p2.6 indoor', 'led p3.9 outdoor', 'spesifikasi led videotron event'],
   },
   {
+    title: 'Rekomendasi Ballroom Hotel di Batam Center dan Harbour Bay untuk Rapat Kerja Nasional',
+    url: '/blog/rekomendasi-ballroom-hotel-batam-center-harbour-bay/',
+    category: 'blog',
+    keywords: ['ballroom batam', 'rapat kerja nasional batam', 'venue mice batam', 'hotel batam center ballroom', 'ballroom harbour bay batam'],
+  },
+  {
     title: '5 Konsep Tema Gathering Unik untuk Perusahaan Manufaktur dan Galangan Kapal di Batam',
     url: '/blog/ide-tema-corporate-gathering-batam/',
     category: 'blog',

@@ -309,7 +309,8 @@ export const servicesData: ServiceItem[] = [
     ],
     relatedSpokes: [
       { title: 'Prosedur Lengkap Izin Keramaian Polresta Barelang dan Pajak Hiburan BPRD Batam', href: '/blog/izin-keramaian-polresta-barelang-pajak-bprd-batam/', excerpt: 'Regulasi resmi perizinan kegiatan formal dan MICE korporasi di wilayah Batam.' },
-      { title: 'Panduan Estimasi Biaya Corporate Gathering di Batam 2026: Simulasi RAB dan Pemilihan Venue', href: '/blog/estimasi-biaya-corporate-gathering-batam/', excerpt: 'Komparasi ballroom hotel berbintang dan alokasi anggaran MICE representatif.' }
+      { title: 'Panduan Estimasi Biaya Corporate Gathering di Batam 2026: Simulasi RAB dan Pemilihan Venue', href: '/blog/estimasi-biaya-corporate-gathering-batam/', excerpt: 'Komparasi ballroom hotel berbintang dan alokasi anggaran MICE representatif.' },
+      { title: 'Rekomendasi Ballroom Hotel di Batam Center dan Harbour Bay untuk Rapat Kerja Nasional', href: '/blog/rekomendasi-ballroom-hotel-batam-center-harbour-bay/', excerpt: 'Komparasi kapasitas ballroom, tinggi plafon, ruang komisi, akses bus, dan komponen biaya rapat kerja.' }
     ]
   },
   {

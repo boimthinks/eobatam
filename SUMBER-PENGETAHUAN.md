@@ -134,6 +134,8 @@ draft: false
 | 10 | Simulasi RAB Family Gathering Karyawan 500 Pax di Batam | `simulasi-rab-family-gathering-500-pax-batam` | family gathering 500 pax batam, simulasi rab gathering batam, gathering karyawan mukakuning | 2026-11-16 |
 | 11 | Kriteria Memilih Master Game dan Fasilitator Outbound Batam | `tips-memilih-fasilitator-outbound-batam` | fasilitator outbound batam, master game outbound, rasio fasilitator 1:15 | 2026-11-17 |
 | 12 | Spesifikasi LED Videotron Indoor P2.6 vs Outdoor P3.9 untuk Event Batam | `spesifikasi-led-videotron-event-batam` | led videotron batam, sewa led screen event batam, led p2.6 indoor | 2026-11-18 |
+| 13 | 5 Konsep Tema Gathering Unik untuk Perusahaan Manufaktur dan Galangan Kapal di Batam | `ide-tema-corporate-gathering-batam` | ide tema corporate gathering batam, tema gathering karyawan pabrik, tema gathering galangan kapal batam | 2026-11-21 |
+| 14 | Rekomendasi Ballroom Hotel di Batam Center dan Harbour Bay untuk Rapat Kerja Nasional | `rekomendasi-ballroom-hotel-batam-center-harbour-bay` | ballroom batam, rapat kerja nasional batam, venue mice batam, ballroom harbour bay batam | 2026-11-24 |
 
 ### Antrean Rencana Topik Prioritas (Pipeline)
 1. **Pilar Gathering:** *Panduan Lengkap Merancang Corporate Gathering Kantor di Batam Tanpa Repot (RAB & Rundown).*

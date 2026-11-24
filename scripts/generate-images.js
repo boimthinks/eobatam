@@ -355,6 +355,13 @@ async function buildImages() {
       title: 'Spesifikasi LED Videotron Event Batam',
       subtitle: 'Perbandingan LED indoor P2.6 dan outdoor P3.9, resolusi piksel, dan kebutuhan daya',
       iconType: 'event'
+    },
+    {
+      file: 'rekomendasi-ballroom-hotel-batam-center-harbour-bay.webp',
+      category: 'Venue Rekomendasi',
+      title: 'Ballroom Hotel Batam Center dan Harbour Bay',
+      subtitle: 'Komparasi kapasitas, tinggi plafon, ruang komisi, akses bus, dan biaya rapat kerja nasional',
+      iconType: 'mice'
     }
   ];
 
