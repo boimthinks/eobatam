@@ -36,7 +36,7 @@ Dokumen ini adalah kalender editorial strategis 30 hari untuk produksi konten bl
 | **12** | Spesifikasi LED Videotron Indoor P2.6 vs Outdoor P3.9 untuk Event Perusahaan di Batam | `spesifikasi-led-videotron-event-batam` | Tips Event | `/layanan/gala-dinner-awarding-batam/` | **TERBIT** |
 | **13** | 5 Konsep Tema Gathering Unik untuk Perusahaan Manufaktur dan Galangan Kapal di Batam | `ide-tema-corporate-gathering-batam` | Gathering | `/layanan/corporate-gathering-batam/` | **TERBIT** |
 | **14** | Rekomendasi Ballroom Hotel di Batam Center dan Harbour Bay untuk Rapat Kerja Nasional | `rekomendasi-ballroom-hotel-batam-center-harbour-bay` | Venue | `/layanan/mice-event-organizer-batam/` | **TERBIT** |
-| **15** | Perhitungan Daya Genset Silent dan Tata Kelola Listrik Aman untuk Panggung Outdoor Batam | `perhitungan-daya-genset-silent-event-batam` | Tips Event | `/layanan/corporate-gathering-batam/` | Siap Tulis |
+| **15** | Perhitungan Daya Genset Silent dan Tata Kelola Listrik Aman untuk Panggung Outdoor Batam | `perhitungan-daya-genset-silent-event-batam` | Tips Event | `/layanan/corporate-gathering-batam/` | **TERBIT** |
 | **16** | Panduan Menyelenggarakan Upacara Groundbreaking Pabrik Baru di Kawasan Industri Batam | `panduan-groundbreaking-peresmian-pabrik-batam` | MICE | `/layanan/mice-event-organizer-batam/` | Siap Tulis |
 | **17** | Tips Memilih Menu Katering Prasmanan dan Barbeque Seafood untuk Gathering Pantai Batam | `panduan-menu-katering-gathering-pantai-batam` | Gathering | `/layanan/corporate-gathering-batam/` | Siap Tulis |
 | **18** | Susunan Acara Awarding Night Korporasi yang Elegan dan Membangun Semangat Karyawan | `susunan-acara-awarding-night-batam` | Gala Dinner | `/layanan/gala-dinner-awarding-batam/` | Siap Tulis |
@@ -52,6 +52,35 @@ Dokumen ini adalah kalender editorial strategis 30 hari untuk produksi konten bl
 | **28** | Panduan Manajemen Transportasi Bus Pariwisata untuk Rombongan Gathering 300 Pax di Batam | `manajemen-transportasi-bus-gathering-batam` | Gathering | `/layanan/corporate-gathering-batam/` | Siap Tulis |
 | **29** | Tips Dokumentasi Foto dan Video Cinematic Menggunakan Drone di Area Pantai Batam | `tips-dokumentasi-event-drone-batam` | Tips Event | `/layanan/corporate-gathering-batam/` | Siap Tulis |
 | **30** | Panduan Memilih Vendor EO All-in-One vs Menangani Sendiri Panitia Internal di Batam | `memilih-eo-all-in-one-vs-panitia-internal-batam` | Tips Event | `/` | Siap Tulis |
+
+---
+
+## 2b. Kalender Lanjutan Hari 31 sampai 37 (Gelombang Kedua)
+
+Tujuh artikel ini memperkuat silo yang baru terisi satu artikel (Silo 4 Gala
+Dinner, Silo 5 Hardware & Produksi, Silo 6 Legalitas) sekaligus menambah sudut
+teknis yang belum disentuh pada gelombang pertama. Setiap topik sudah dicek
+tidak bertumpang tindih dengan 15 artikel terbit.
+
+| Hari | Judul Artikel Strategis | Target Slug URL | Kategori | Target Internal Link | Status |
+|:---:|:---|:---|:---|:---|:---:|
+| **31** | Sewa Alat Terpisah vs Paket Event All-in-One di Batam | `sewa-alat-event-terpisah-vs-paket-all-in-one-batam` | Tips Event | `/layanan/` | Siap Tulis |
+| **32** | Titik Rigging dan Beban Panggung Indoor Hotel Batam | `panduan-titik-rigging-beban-panggung-indoor-batam` | Tips Event | `/layanan/gala-dinner-awarding-batam/` | Siap Tulis |
+| **33** | Rundown Peresmian Kantor Cabang dan Product Launching | `rundown-peresmian-kantor-product-launching-batam` | MICE | `/layanan/mice-event-organizer-batam/` | Siap Tulis |
+| **34** | Genset dan Panel Daya Panggung Hiburan Resort Nongsa | `distribusi-daya-genset-panggung-resort-nongsa` | Tips Event | `/layanan/gala-dinner-awarding-batam/` | Siap Tulis |
+| **35** | Sertifikat dan Akreditasi Peserta Seminar di Batam | `sertifikasi-akreditasi-peserta-seminar-batam` | MICE | `/layanan/mice-event-organizer-batam/` | Siap Tulis |
+| **36** | Transportasi Tamu VIP dan Parkir Rombongan Batam Center | `transportasi-tamu-vip-parkir-event-batam-center` | Tips Event | `/layanan/mice-event-organizer-batam/` | Siap Tulis |
+| **37** | Rekomendasi Hotel Transit dan Penginapan Kru Event Batam | `hotel-transit-penginapan-vendor-event-batam` | Venue | `/layanan/corporate-gathering-batam/` | Siap Tulis |
+
+Catatan cakupan silo untuk gelombang kedua:
+
+- **Silo 4 Gala Dinner** bertambah dua artikel teknis (beban rigging indoor dan
+  distribusi daya genset) agar pilar gala dinner tidak hanya berisi rundown.
+- **Silo 5 Hardware & Produksi** bertambah satu artikel kebijakan paket
+  terintegrasi, sesuai aturan bisnis bahwa alat tidak disewakan eceran.
+- **Silo 6 Legalitas** tetap tiga artikel; topik sertifikasi peserta dan
+  transportasi VIP ditempatkan di MICE karena berkaitan langsung dengan
+  kepatuhan dan protokoler acara resmi.
 
 ---
 

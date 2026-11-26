@@ -161,4 +161,10 @@ export const INTERNAL_LINKS: InternalLinkItem[] = [
     category: 'blog',
     keywords: ['ide tema corporate gathering batam', 'tema gathering karyawan pabrik', 'tema gathering galangan kapal batam', 'konsep tema family day batam'],
   },
+  {
+    title: 'Perhitungan Daya Genset Silent untuk Panggung Outdoor Batam',
+    url: '/blog/perhitungan-daya-genset-silent-event-batam/',
+    category: 'blog',
+    keywords: ['genset silent batam', 'daya listrik panggung', 'kapasitas genset event', 'panel distribusi panggung', 'kelistrikan event batam'],
+  },
 ];

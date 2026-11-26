@@ -136,6 +136,8 @@ draft: false
 | 12 | Spesifikasi LED Videotron Indoor P2.6 vs Outdoor P3.9 untuk Event Batam | `spesifikasi-led-videotron-event-batam` | led videotron batam, sewa led screen event batam, led p2.6 indoor | 2026-11-18 |
 | 13 | 5 Konsep Tema Gathering Unik untuk Perusahaan Manufaktur dan Galangan Kapal di Batam | `ide-tema-corporate-gathering-batam` | ide tema corporate gathering batam, tema gathering karyawan pabrik, tema gathering galangan kapal batam | 2026-11-21 |
 | 14 | Rekomendasi Ballroom Hotel di Batam Center dan Harbour Bay untuk Rapat Kerja Nasional | `rekomendasi-ballroom-hotel-batam-center-harbour-bay` | ballroom batam, rapat kerja nasional batam, venue mice batam, ballroom harbour bay batam | 2026-11-24 |
+| 15 | Event Organizer untuk Acara Natal & Tahun Baru Perusahaan di Batam: Panduan Perencanaan Akhir Tahun | `acara-natal-tahun-baru-perusahaan-batam` | event natal perusahaan batam, acara tahun baru kantor batam, gathering akhir tahun batam | 2026-11-20 |
+| 16 | Perhitungan Daya Genset Silent untuk Panggung Outdoor Batam | `perhitungan-daya-genset-silent-event-batam` | genset silent batam, daya listrik panggung, kelistrikan event batam | 2026-11-26 |
 
 ### Antrean Rencana Topik Prioritas (Pipeline)
 1. **Pilar Gathering:** *Panduan Lengkap Merancang Corporate Gathering Kantor di Batam Tanpa Repot (RAB & Rundown).*

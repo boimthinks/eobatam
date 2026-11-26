@@ -158,3 +158,122 @@ Setiap artikel menautkan kembali (internal link) ke Halaman Layanan terkait:
    - Spoke Article -> Service Page (dengan exact anchor atau partial match anchor semantik).
    - Service Page -> Homepage.
    - Breadcrumb schema di semua halaman.
+
+---
+
+## 7. Riset Entity Gelombang Kedua (Hari 31 sampai 37)
+
+Riset ini disiapkan sebelum penulisan agar penulis tinggal mengeksekusi. Setiap
+topik punya keyword, entitas, dan sudut pembeda terhadap artikel terbit.
+
+### 7.1 Hari 31: Sewa Alat Terpisah vs Paket All-in-One
+
+- **Primary Keywords:** `sewa alat event batam`, `paket event all in one batam`,
+  `vendor alat panggung batam`.
+- **Long-Tail Keywords:** `kenapa eo batam tidak melayani sewa alat lepas`,
+  `risiko sewa sound system terpisah untuk gathering kantor`,
+  `perbandingan biaya sewa alat vs paket event batam`.
+- **Entity Keywords:** `standalone hardware rental`, `technical rider`,
+  `single point of responsibility`, `line array`, `genset silent`,
+  `rigging truss F34`.
+- **Sudut pembeda:** Artikel ini bukan katalog harga, melainkan penjelasan
+  risiko operasional ketika klien memecah alat dan panitia. Wajib menyebut
+  kebijakan bisnis bahwa alat tidak disewakan eceran, dengan nada edukatif.
+
+### 7.2 Hari 32: Titik Rigging dan Beban Panggung Indoor
+
+- **Primary Keywords:** `rigging panggung ballroom batam`, `titik rigging hotel`,
+  `beban panggung event indoor`.
+- **Long-Tail Keywords:** `berapa beban titik gantungan ballroom hotel batam`,
+  `aturan rigging di ballroom hotel tanpa merusak plafon`,
+  `rigging truss F34 untuk event indoor batam`.
+- **Entity Keywords:** `rigging point`, `working load limit`, `truss F34`,
+  `ballast`, `load in load out schedule`, `plafon ballroom`,
+  `building management approval`.
+- **Sudut pembeda:** Artikel rigging yang sudah terbit membahas panggung pantai
+  dan angin laut. Artikel ini khusus indoor: batas beban plafon hotel,
+  izin engineering building, dan jam load in.
+
+### 7.3 Hari 33: Rundown Peresmian Kantor dan Product Launching
+
+- **Primary Keywords:** `peresmian kantor cabang batam`, `product launching batam`,
+  `rundown acara peresmian`.
+- **Long-Tail Keywords:** `susunan acara peresmian kantor cabang perusahaan`,
+  `checklist product launching perusahaan di hotel batam`,
+  `protokol gunting pita dan penandatanganan prasasti`.
+- **Entity Keywords:** `groundbreaking`, `ribbon cutting`, `prasasti`,
+  `unveiling`, `media invitation`, `press kit`, `photo opportunity`,
+  `master of ceremony bilingual`.
+- **Sudut pembeda:** Melengkapi artikel groundbreaking yang berfokus pabrik.
+  Di sini objeknya kantor cabang dan peluncuran produk di ballroom, termasuk
+  undangan media dan sesi foto.
+
+### 7.4 Hari 34: Distribusi Daya Genset Panggung Resort Nongsa
+
+- **Primary Keywords:** `genset panggung batam`, `distribusi daya listrik event`,
+  `kelistrikan panggung resort nongsa`.
+- **Long-Tail Keywords:** `berapa kva genset untuk panggung hiburan resort`,
+  `pembagian panel daya sound dan lighting panggung`,
+  `syarat genset silent di resort nongsa batam`.
+- **Entity Keywords:** `kVA`, `panel distribusi`, `MCB`, `kabel power`,
+  `grounding`, `noise level dB`, `genset silent`, `daya tersedia venue`.
+- **Sudut pembeda:** Artikel hari 15 dijadwalkan membahas perhitungan daya
+  genset panggung outdoor secara umum. Artikel ini spesifik pada satu venue
+  resort tepi laut, pembagian panel, dan batas kebisingan. Bila artikel hari 15
+  belum ditulis, simpan artikel ini untuk terbit setelahnya agar tidak
+  kanibalisasi.
+
+### 7.5 Hari 35: Sertifikasi dan Akreditasi Peserta Seminar
+
+- **Primary Keywords:** `sertifikat peserta seminar batam`,
+  `akreditasi seminar batam`, `manajemen peserta seminar`.
+- **Long-Tail Keywords:** `cara menghitung jumlah sertifikat seminar peserta`,
+  `sertifikat SKP seminar profesi batam`,
+  `alur registrasi peserta konferensi batam`.
+- **Entity Keywords:** `registrasi digital`, `QR check in`, `sertifikat elektronik`,
+  `SKP`, `kartu peserta`, `seat map`, `daftar hadir`.
+- **Sudut pembeda:** Artikel konferensi yang terbit membahas checklist acara.
+  Artikel ini fokus administrasi peserta: kuota, akreditasi, dan rekapitulasi
+  kehadiran, termasuk kebutuhan instansi yang meminta laporan.
+
+### 7.6 Hari 36: Transportasi Tamu VIP dan Parkir Rombongan
+
+- **Primary Keywords:** `transportasi tamu vip batam`, `parkir rombongan event batam`,
+  `shuttle peserta seminar batam`.
+- **Long-Tail Keywords:** `pengaturan parkir bus rombongan di hotel batam center`,
+  `shuttle tamu vip dari bandara hang nadim ke venue event`,
+  `koordinasi satpam dan petugas parkir event`.
+- **Entity Keywords:** `shuttle bus`, `drop off area`, `valet`,
+  `Bandara Hang Nadim`, `batam center traffic`, `petugas parkir`,
+  `rundown kedatangan tamu`.
+- **Sudut pembeda:** Melengkapi artikel transportasi bus gathering hari 28.
+  Fokus di sini pada penjemputan VIP, slot parkir, dan lalu lintas Batam Center
+  saat jam sibuk.
+
+### 7.7 Hari 37: Hotel Transit dan Penginapan Vendor
+
+- **Primary Keywords:** `hotel transit batam`, `penginapan kru event batam`,
+  `akomodasi vendor event batam`.
+- **Long-Tail Keywords:** `tempat menginap kru panggung saat event batam`,
+  `hotel murah dekat venue event batam center`,
+  `pengaturan kamar crew dan talent event luar kota`.
+- **Entity Keywords:** `crew bunk`, `talent room`, `check in massal`,
+  `room list`, `early check in`, `late check out`, `hotel transit`,
+  `Bandara Hang Nadim`.
+- **Sudut pembeda:** Dua artikel venue yang terbit membahas resort dan ballroom
+  untuk peserta. Artikel ini mengurus kebutuhan internal produksi: kru, talent,
+  dan vendor luar pulau, termasuk opsi hotel transit dekat bandara.
+
+### 7.8 Catatan Riset Lintas Topik
+
+- **Anti kanibalisasi:** topik hari 32 dan 34 wajib tidak mengulang SOP angin
+  laut pada artikel `mitigasi-cuaca-panggung-rigging-pantai-batam`, dan topik
+  hari 34 wajib menaut ke artikel hari 15 bila sudah terbit, bukan mengulang
+  hitungan dayanya.
+- **Internal link wajib per artikel:** satu tautan ke beranda dengan anchor
+  `eo batam` atau `event organizer batam`, satu tautan ke halaman layanan silo
+  terkait, dan minimal satu tautan ke artikel blog yang sudah terbit.
+- **Gambar:** rasio 4:3, nama berkas sama dengan slug, disimpan di
+  `public/images/blog/<slug>.webp`.
+- **Kategori frontmatter:** hanya boleh salah satu dari Gathering, Outbound,
+  MICE, Gala Dinner, Tips Event, ditambah Venue untuk artikel hari 37.
