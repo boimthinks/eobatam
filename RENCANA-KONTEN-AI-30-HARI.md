@@ -37,12 +37,12 @@ Dokumen ini adalah kalender editorial strategis 30 hari untuk produksi konten bl
 | **13** | 5 Konsep Tema Gathering Unik untuk Perusahaan Manufaktur dan Galangan Kapal di Batam | `ide-tema-corporate-gathering-batam` | Gathering | `/layanan/corporate-gathering-batam/` | **TERBIT** |
 | **14** | Rekomendasi Ballroom Hotel di Batam Center dan Harbour Bay untuk Rapat Kerja Nasional | `rekomendasi-ballroom-hotel-batam-center-harbour-bay` | Venue | `/layanan/mice-event-organizer-batam/` | **TERBIT** |
 | **15** | Perhitungan Daya Genset Silent dan Tata Kelola Listrik Aman untuk Panggung Outdoor Batam | `perhitungan-daya-genset-silent-event-batam` | Tips Event | `/layanan/corporate-gathering-batam/` | **TERBIT** |
-| **16** | Panduan Menyelenggarakan Upacara Groundbreaking Pabrik Baru di Kawasan Industri Batam | `panduan-groundbreaking-peresmian-pabrik-batam` | MICE | `/layanan/mice-event-organizer-batam/` | Siap Tulis |
-| **17** | Tips Memilih Menu Katering Prasmanan dan Barbeque Seafood untuk Gathering Pantai Batam | `panduan-menu-katering-gathering-pantai-batam` | Gathering | `/layanan/corporate-gathering-batam/` | Siap Tulis |
-| **18** | Susunan Acara Awarding Night Korporasi yang Elegan dan Membangun Semangat Karyawan | `susunan-acara-awarding-night-batam` | Gala Dinner | `/layanan/gala-dinner-awarding-batam/` | Siap Tulis |
-| **19** | Panduan Fun Games Pantai Tanpa Basah untuk Karyawan Kantor Usia Majemuk | `ide-fun-games-pantai-gathering-batam` | Outbound | `/layanan/outbound-team-building-batam/` | Siap Tulis |
-| **20** | Tata Cara Booking Kapal Pompong dan Speedboat Carter untuk Outing Pulau Terluar Batam | `sewa-kapal-outing-pulau-batam` | Venue | `/layanan/corporate-gathering-batam/` | Siap Tulis |
-| **21** | Perbedaan Sistem Sound Line Array vs Point Source untuk Acara Ballroom dan Pantai Batam | `sound-system-line-array-event-batam` | Tips Event | `/layanan/corporate-gathering-batam/` | Siap Tulis |
+| **16** | Panduan Menyelenggarakan Upacara Groundbreaking Pabrik Baru di Kawasan Industri Batam | `panduan-groundbreaking-peresmian-pabrik-batam` | MICE | `/layanan/mice-event-organizer-batam/` | Draf |
+| **17** | Tips Memilih Menu Katering Prasmanan dan Barbeque Seafood untuk Gathering Pantai Batam | `panduan-menu-katering-gathering-pantai-batam` | Gathering | `/layanan/corporate-gathering-batam/` | Draf |
+| **18** | Susunan Acara Awarding Night Korporasi yang Elegan dan Membangun Semangat Karyawan | `susunan-acara-awarding-night-batam` | Gala Dinner | `/layanan/gala-dinner-awarding-batam/` | Draf |
+| **19** | Panduan Fun Games Pantai Tanpa Basah untuk Karyawan Kantor Usia Majemuk | `ide-fun-games-pantai-gathering-batam` | Outbound | `/layanan/outbound-team-building-batam/` | Draf |
+| **20** | Tata Cara Booking Kapal Pompong dan Speedboat Carter untuk Outing Pulau Terluar Batam | `sewa-kapal-outing-pulau-batam` | Venue | `/layanan/corporate-gathering-batam/` | Draf |
+| **21** | Perbedaan Sistem Sound Line Array vs Point Source untuk Acara Ballroom dan Pantai Batam | `sound-system-line-array-event-batam` | Tips Event | `/layanan/corporate-gathering-batam/` | Draf |
 | **22** | Protokol Keamanan Medis dan Pertolongan Pertama (P3K) pada Aktivitas Outbound di Batam | `protokol-k3-medis-outbound-batam` | Outbound | `/layanan/outbound-team-building-batam/` | Siap Tulis |
 | **23** | Strategi Pengaturan Waktu Rundown Mengantisipasi Pasang Surut Air Laut di Pantai Nongsa | `rundown-outbound-pasang-surut-pantai-nongsa` | Outbound | `/layanan/outbound-team-building-batam/` | Siap Tulis |
 | **24** | Checklist Peralatan Booth Pameran B2B dan Konstruksi Rigging Khusus di Batam | `tips-pembuatan-booth-pameran-batam` | MICE | `/layanan/mice-event-organizer-batam/` | Siap Tulis |

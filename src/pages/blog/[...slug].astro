@@ -6,8 +6,12 @@ import ContactCTA from '../../components/ContactCTA.astro';
 import GoogleSourcePreferences from '../../components/GoogleSourcePreferences.astro';
 
 export async function getStaticPaths() {
-  // Draft tidak dibangun supaya tidak tayang dan tidak masuk sitemap.
-  const posts = (await getCollection('blog')).filter((post) => !post.data.draft);
+  // Draft hanya dibuka di dev server untuk keperluan review. Saat build
+  // produksi import.meta.env.DEV bernilai false, jadi draft tidak tayang dan
+  // tidak masuk sitemap.
+  const posts = (await getCollection('blog')).filter(
+    (post) => !post.data.draft || import.meta.env.DEV,
+  );
   return posts.map((post) => ({
     params: { slug: post.id },
     props: { post },
