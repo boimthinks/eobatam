@@ -7,7 +7,7 @@ category: "MICE"
 tags: ["groundbreaking pabrik batam", "peresmian pabrik batam", "upacara peletakan batu pertama", "event kawasan industri batam", "eo batam"]
 image: "/images/blog/panduan-groundbreaking-peresmian-pabrik-batam.webp"
 schemaType: "Article"
-draft: true
+draft: false
 faq:
   - q: "Berapa lama waktu yang dibutuhkan untuk menyiapkan upacara groundbreaking di lahan pabrik?"
     a: "Untuk 300 sampai 500 tamu, persiapan fisik memerlukan dua sampai tiga hari. Hari pertama untuk pemerataan tanah, pemasangan tenda, dan jalur listrik. Hari kedua untuk panggung, kursi, sound, dan dekorasi. Hari ketiga dipakai gladi resik dan pengecekan protokol. Lahan yang baru diurug sering menambah waktu karena alat berat masih bekerja di area yang sama."
