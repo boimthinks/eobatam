@@ -7,7 +7,7 @@ category: "Gathering"
 tags: ["katering gathering batam", "bbq seafood batam", "prasmanan pantai batam", "menu gathering kantor", "eo batam"]
 image: "/images/blog/panduan-menu-katering-gathering-pantai-batam.webp"
 schemaType: "Article"
-draft: true
+draft: false
 faq:
   - q: "Berapa porsi makanan yang harus disiapkan untuk gathering pantai 300 orang?"
     a: "Hitung 1,1 sampai 1,2 porsi per peserta untuk menu utama, karena sebagian tamu mengambil dua kali dan sebagian tidak makan nasi. Untuk BBQ seafood, siapkan 3 sampai 4 potong per orang dengan variasi udang, cumi, dan ikan. Sisa makanan di acara pantai biasanya lebih tinggi karena tamu lebih banyak bergerak dan minum."
